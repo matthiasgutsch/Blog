@@ -1,0 +1,28 @@
+.blog-sm {
+    max-width: 350px;
+    &-image {
+        img {
+            max-width: none;
+            width: 100px;
+            height: 70px;
+        }
+    }
+
+    &-title {
+        @apply cursor-pointer font-semibold;
+        color: var(--black);
+        font-size: 16px;
+        margin-bottom: 5px;
+        transition: all 0.2s ease;
+
+        &:hover {
+            color: #5d5d5d;
+            transition: all 0.2s ease;
+        }
+    }
+
+    &-date {
+        font-size: 1.2rem;
+        color: var(--light-grey);
+    }
+}

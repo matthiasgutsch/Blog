@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --light-grey: #a3a199;
+    --grey: #646157;
+    --black: #171822
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: var(--grey)
+}
+
+
+// Reusable CSS
+.custom-container {
+    @apply w-full px-4 mx-auto;
+
+    @media screen and (min-width: 576px){
+        max-width: 540px;
+    }
+    @media screen and (min-width: 768px){
+        max-width: 720px;
+    }
+    @media screen and (min-width: 992px){
+        max-width: 960px;
+    }
+    @media screen and (min-width: 1200px){
+        max-width: 1140px;
+    }
+    @media screen and (min-width: 1500px){
+        max-width: 1200px;
+    }
+}

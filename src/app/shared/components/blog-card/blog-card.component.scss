@@ -1,0 +1,31 @@
+.blog {
+    max-width: 350px;
+    &__image {
+        width: 350px;
+        height: 258px;
+        overflow: hidden;
+    }
+    &__date {
+        padding-top: 24px;
+        margin-bottom: 4px;
+        font-size: 1.2rem;
+        color: var(--light-grey);
+    }
+
+    &__title,
+    &__discription {
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        @apply font-semibold cursor-pointer;
+        color: var(--black);
+        font-size: 1.8rem;
+        transition: all 0.2s ease;
+
+        &:hover {
+            color: #5d5d5d;
+            transition: all 0.2s ease;
+        }
+    }
+}

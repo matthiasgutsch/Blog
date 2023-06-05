@@ -1,0 +1,39 @@
+.navbar {
+    @apply flex justify-between py-14;
+
+    &-list{
+        @apply flex gap-20;
+
+        &-item {
+            @apply cursor-pointer;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                @apply text-gray-500;
+                transition: all 0.2s ease-in;
+            }
+        }
+    }
+
+    &-social {
+        @apply flex gap-8 cursor-pointer;
+        
+        i {
+            font-size: 1.6rem
+        }
+    }
+
+    &-logo {
+        @apply uppercase font-bold cursor-pointer;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            @apply text-gray-500;
+            transition: all 0.2s ease-in;
+        }
+    }
+}
+
+header {
+    @apply bg-slate-100;
+}
