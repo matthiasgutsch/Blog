@@ -1,0 +1,63 @@
+.post {
+    margin-bottom: 100px;
+    max-width: 945px;
+    position: relative;
+
+    &-image {
+        img {
+            width: 100%;
+            height: 578px;
+        }
+    }
+
+    &-wrapper {
+        @apply px-28 py-20;
+        max-width: 694px;
+        position: absolute;
+        bottom: -50%;
+        transform: translateY(-50%);
+        left: 75px;
+        background: #f8f7f3;
+        animation: fade 0.5s ease-in;
+    }
+
+    &-date {
+        margin-bottom: 4px;
+        font-size: 1.2rem;
+        color: var(--light-grey);
+    }
+
+    &-title {
+        @apply font-semibold cursor-pointer;
+        color: var(--black);
+        font-size: 2.8rem;
+        transition: all 0.2s ease;
+        margin-bottom: 12px;
+        line-height: 1.4;
+
+        &:hover {
+            color: #5d5d5d;
+            transition: all 0.2s ease;
+        }
+    }
+
+    &-description {
+        line-height: 1.75;
+        margin-bottom: 20px;
+    }
+
+    &-btn {
+        @apply font-semibold;
+        color: var(--black);
+    }
+}
+
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
+}

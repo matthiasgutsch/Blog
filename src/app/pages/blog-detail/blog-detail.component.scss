@@ -1,0 +1,63 @@
+.blog {
+    &-wrapper {
+        padding-top: 5.4rem;
+        margin: 0 19rem;
+        padding-bottom: 30px;
+        @media screen and (max-width: 992px) {
+            padding-top: 3.4rem;
+            margin: 0 10rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding-top: 2.4rem;
+            margin: 0 6rem;
+        }
+    }
+}
+
+.title {
+    @apply font-semibold mb-8;
+    color: var(--black);
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+.description {
+    p {
+        @apply mb-20;
+        line-height: 1.75;
+        color: var(--grey)
+    }
+}
+
+
+.reply {
+    @apply pt-20;
+    border-top: 1px solid#ededed;
+
+    &-author {
+        @apply flex gap-8;
+        margin-bottom: 8px;
+
+        &-img {
+            width: 44px;
+            height: 44px;
+        }
+
+        &-name {
+            @apply font-semibold;
+            font-size: 18px;
+        }
+    }
+
+    &-date-time {
+        font-size: 14px;
+        color: #656e79;
+    }
+
+    &-content {
+        @apply mb-5;
+        margin-left: 60px;
+        line-height: 1.8;
+    }
+}

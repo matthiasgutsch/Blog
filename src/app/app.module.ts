@@ -9,6 +9,10 @@ import { TopPostsComponent } from './shared/components/top-posts/top-posts.compo
 import { NewsLetterComponent } from './shared/components/news-letter/news-letter.component';
 import { BlogCardComponent } from './shared/components/blog-card/blog-card.component';
 import { BlogCardSmComponent } from './shared/components/blog-card-sm/blog-card-sm.component';
+import { NewPostComponent } from './shared/components/new-post/new-post.component';
+import { BlogDetailComponent } from './pages/blog-detail/blog-detail.component';
+import { SampleComponent } from './pages/sample/sample.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { BlogCardSmComponent } from './shared/components/blog-card-sm/blog-card-
     TopPostsComponent,
     NewsLetterComponent,
     BlogCardComponent,
-    BlogCardSmComponent
+    BlogCardSmComponent,
+    NewPostComponent,
+    BlogDetailComponent,
+    SampleComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

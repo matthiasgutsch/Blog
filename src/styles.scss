@@ -8,7 +8,9 @@
 :root {
     --light-grey: #a3a199;
     --grey: #646157;
-    --black: #171822
+    --black: #171822;
+    --primary: #ffd46d;
+    --primary-light: #f8f7f3
 }
 
 * {
@@ -18,6 +20,20 @@
 
 html {
     font-size: 62.5%;
+
+    font-size: 62.5%; // 1rem = 10 px; 10px/16px = 62.5%
+  
+    @media screen and (max-width: 1200px) { // width < 1200?
+      font-size: 56.25%; // 1 rem = 9px; 9/16 = 56.25%
+    }
+  
+    @media screen and (max-width: 900px) { // width < 900?
+      font-size: 50%; // 1 rem = 8px; 8/16 = 50%
+    }
+  
+    @media screen and (max-width: 500px) {
+      font-size: 45%; // 1 rem = 12px; 12/16 = 75%
+    }
 }
 
 body {
@@ -46,4 +62,18 @@ body {
     @media screen and (min-width: 1500px){
         max-width: 1200px;
     }
+}
+
+.date {
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+    color: var(--light-grey);
+}
+
+input, textarea {
+    background: #f8f7f3;
+    border: 1px solid #f4f4f4;
+    border-radius: 0.2rem;
+    padding: 1.2rem 2.4rem;
+    outline: none
 }

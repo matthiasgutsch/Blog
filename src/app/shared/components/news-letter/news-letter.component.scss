@@ -1,0 +1,71 @@
+.news-letter {
+    background-image: url("../../../../assets/images/leafe.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 120rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (max-width: 1500px) {
+        width: 120rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 100rem;
+    }
+
+    @media screen and (max-width: 992px) {
+        @apply px-14 py-16;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        @apply px-10 py-14;
+        width: 60rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        @apply px-6 py-14;
+        grid-template-columns: 1fr;
+        width: auto;
+    }
+
+    &-title {
+        @apply font-semibold;
+        color: var(--black);
+        font-size: 2.8rem;
+        margin: 6px 0 10px 0;
+    }
+
+    &-description {
+        margin-bottom: 20px;
+        line-height: 1.75;
+    }
+}
+
+.email-group {
+    @media screen and (max-width: 600px) { 
+        @apply flex flex-wrap;
+    }
+
+    input {
+        @apply px-5 py-6;
+
+        @media screen and (max-width: 600px) {
+            @apply pr-0;
+        }
+    }
+
+    button {
+        background: var(--primary);
+        color: var(--black);
+        @apply px-10 py-6;
+
+        @media screen and (max-width: 400px) { 
+            @apply mt-4;
+        }
+    }
+}
