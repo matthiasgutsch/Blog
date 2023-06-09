@@ -3,12 +3,20 @@
     background-color: var(--primary-light);
     &-container {
         @apply flex justify-between;
+
+        @media screen and (max-width: 500px) {
+            @apply flex-col gap-6;
+        }
     }
 
     &-logo {
         @apply font-semibold;
         font-size: 3rem;
         color: var(--black);
+
+        @media screen and (max-width: 500px) {
+            font-size: 4rem;
+        }
     }
 
     &-links {
@@ -16,12 +24,27 @@
         h5 {
             @apply mb-8 font-semibold;
             font-size: 2rem;
+
+           @media screen and (max-width: 500px) {
+                @apply mb-2;
+                font-size: 2.4rem;
+            }
         }
         ul {
             li { 
+                @media screen and (max-width: 500px) {
+                    font-size: 1.8rem;
+                }
                 &:not(:last-child) {
                     @apply mb-3;
                 }
+
+                &.footer-links-social  {
+                    @media screen and (max-width: 500px) {
+                        @apply mt-6;
+                    }
+                }
+
             }
         }
     }

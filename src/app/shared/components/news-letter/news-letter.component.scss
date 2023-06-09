@@ -55,16 +55,14 @@
         @apply px-5 py-6;
 
         @media screen and (max-width: 600px) {
-            @apply pr-0;
+            @apply pr-0 w-full;
         }
     }
 
     button {
-        background: var(--primary);
-        color: var(--black);
         @apply px-10 py-6;
 
-        @media screen and (max-width: 400px) { 
+        @media screen and (max-width: 600px) { 
             @apply mt-4;
         }
     }

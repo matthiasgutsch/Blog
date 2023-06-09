@@ -1,17 +1,34 @@
 .blog {
-    max-width: 350px;
+    max-width: 35rem;
+
+    @media screen and (max-width: 500px) {
+        max-width: none;
+        width: 100%;
+    }
+
     &-image {
-        width: 350px;
-        height: 258px;
+        width: 35rem;
+        height: 25.8rem;
+        object-fit: cover;
         overflow: hidden;
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
+            height: auto;
+        }
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
     }
     &-date {
-        padding-top: 24px;
+        padding-top: 2.4rem;
     }
 
     &-title,
     &-discription {
-        margin-bottom: 12px;
+        margin-bottom: 1.2rem;
     }
 
     &-title {
@@ -19,6 +36,11 @@
         color: var(--black);
         font-size: 1.8rem;
         transition: all 0.2s ease;
+
+        @media screen and (max-width: 500px) {
+            @apply mb-3;
+            font-size: 2rem;
+        }
 
         &:hover {
             color: #5d5d5d;

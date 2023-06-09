@@ -1,19 +1,33 @@
 .blog-sm {
-    max-width: 350px;
+    max-width: 35rem;
+
+    @media screen and (max-width: 500px) {
+        max-width: none;
+        width: 100%;
+    }
     &-image {
         img {
             max-width: none;
-            width: 100px;
-            height: 70px;
+            width: 10rem;
+            height: 7rem;
+
+            @media screen and (max-width: 500px) {
+                width: 12rem;
+                height: 8rem;
+            }
         }
     }
 
     &-title {
         @apply cursor-pointer font-semibold;
         color: var(--black);
-        font-size: 16px;
-        margin-bottom: 5px;
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
         transition: all 0.2s ease;
+
+        @media screen and (max-width: 500px) {
+            font-size: 1.8rem;
+        }
 
         &:hover {
             color: #5d5d5d;
