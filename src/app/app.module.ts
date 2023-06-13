@@ -13,6 +13,7 @@ import { NewPostComponent } from './shared/components/new-post/new-post.componen
 import { BlogDetailComponent } from './pages/blog-detail/blog-detail.component';
 import { SampleComponent } from './pages/sample/sample.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { LoadMoreBtnComponent } from './shared/components/load-more-btn/load-more-btn.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     NewPostComponent,
     BlogDetailComponent,
     SampleComponent,
-    ContactComponent
+    ContactComponent,
+    LoadMoreBtnComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 .blog {
     &-wrapper {
         padding-top: 5.4rem;
-        margin: 0 19rem;
+        margin: 0 18rem;
         padding-bottom: 30px;
         @media screen and (max-width: 992px) {
             padding-top: 3.4rem;
@@ -18,15 +18,23 @@
 .title {
     @apply font-semibold mb-8;
     color: var(--black);
-    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 1.4;
+
+    @media screen and (max-width: 768px) {
+        line-height: 1.2;
+    }
 }
 
 .description {
     p {
-        @apply mb-20;
+        @apply mb-6;
         line-height: 1.75;
-        color: var(--grey)
+        color: var(--grey);
+
+        &:last-child {
+            @apply mb-20
+        }
     }
 }
 

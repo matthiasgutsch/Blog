@@ -2,12 +2,22 @@
 <br>
 <br>
 <br>
-<div class="p-10 sm:p-20">
-    <app-blog-card></app-blog-card>
+<div class="custom-container">
+    <div class="flex gap-8 flex-wrap">
+        <div *ngFor="let item of items">
+            <app-blog-card></app-blog-card>
+        </div>
+    </div>
+    <app-load-more-btn></app-load-more-btn>
     <br>
     <br>
     <br>
-    <app-blog-card-sm></app-blog-card-sm>
+    <h1 class="section-title">Trending Blogs</h1>
+    <div class="flex gap-8 flex-wrap">
+        <ng-container *ngFor="let item of items">
+            <app-blog-card-sm></app-blog-card-sm>
+        </ng-container>
+    </div>
     <br>
     <br>
     <br>
