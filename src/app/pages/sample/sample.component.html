@@ -1,15 +1,24 @@
 
-<div class="wrapper">
-    <owl-carousel-o [options]="customOptions">
+<div class="custom-container">
+    <owl-carousel-o [options]="customOptions" (change)="getPassedData($event)">
         <ng-container *ngFor="let slide of slides">
             <ng-template class="slide" carouselSlide>
-          <app-new-post></app-new-post>
-        <!-- <img [src]="slide.url" [alt]="slide.id" [title]="slide.id"> -->
-      </ng-template>
-    </ng-container>
-
+                <app-new-post-second></app-new-post-second>
+            </ng-template>
+        </ng-container>
   </owl-carousel-o>  
 </div>
+
+<!-- <div class="wrapper">
+    <owl-carousel-o [options]="customOptions" (change)="getPassedData($event)">
+        <ng-container *ngFor="let slide of slides">
+            <ng-template class="slide" carouselSlide>
+                <app-new-post></app-new-post>
+            </ng-template>
+        </ng-container>
+  </owl-carousel-o>  
+</div> -->
+
 <br>
 <br>
 <br>

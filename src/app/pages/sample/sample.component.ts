@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
+import { OwlOptions, SlidesOutputData } from 'ngx-owl-carousel-o';
+import { DataSharingService } from 'src/app/shared/service/data-sharing.service';
 
 @Component({
   selector: 'app-sample',
@@ -15,15 +16,17 @@ export class SampleComponent {
     {img: "http://placehold.it/350x150/666666"}
   ];
 
+  addAnimation = true;
+
   customOptions: OwlOptions = {
     loop: true,
-    autoplay: true,
+    autoplay: false,
     center: true,
     dots: false,
     nav: true,
     autoHeight: true,
     autoWidth: true,
-    navText: [ '<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>' ],
+    navText: [ '<i class="fa-sharp fa-solid fa-angle-left"></i>', '<i class="fa-sharp fa-solid fa-angle-right"></i>' ],
     responsive: {
       0: {
         items: 1,
@@ -35,6 +38,12 @@ export class SampleComponent {
         items: 1,
       }
     }
+  }
+
+  constructor(private dataSharingService: DataSharingService) {}
+
+  getPassedData(data: SlidesOutputData) {
+    this.dataSharingService.changedSlides$.next(true)
   }
   
 }

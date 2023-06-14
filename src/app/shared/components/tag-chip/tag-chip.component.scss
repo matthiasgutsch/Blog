@@ -1,0 +1,16 @@
+.tag {
+    @apply w-fit py-6 px-9;
+    border: 1px solid rgba(199,199,199,.2);
+    box-shadow: 0 3px 5px 0 rgb(30 32 90 / 3%);
+    border-radius: 50px;
+    margin: 5px 8px 5px 0;
+    font-size: 1.4rem;
+    line-height: 1.1;
+    transition: all 0.2s ease-in;
+    
+    &:hover {
+        @apply cursor-pointer;
+        background-color: #f8f7f3;
+        transition: all 0.2s ease-in;
+    }
+}
