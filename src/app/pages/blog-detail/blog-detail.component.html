@@ -1,28 +1,26 @@
 <div class="custom-container mb-12">
-    <img src="../../../assets/images/1.jpg" alt="">
+    <img src="../../../assets/images/slave.jpg" alt="" class="blog-image">
     <div class="blog-wrapper">
         <div class="date">ART, TRAVEL - NOV 17, 2020</div>
-        <div class="title">Genean mattis tortor ac sapien congue molestie eget dolor</div>
+        <div class="title">{{blog?.title}}</div>
         <div class="description">
             <p>
-                Quisque sollicitudin lacinia sapien, eu tincidunt nunc accumsan laoreet. Curabitur feugiat posuere odio nec tincidunt. Pellentesque sagittis nibh venenatis sapieni congue consectetur. Integer nulla nunc, efficitur sit amet sagittis sed, suscipit et magna. Nulla porttitor neque non dapibus nec elit tristique sagittis. Maecenas viverra tortor sed magna volutpat, sed semper leo interdum. Donec pharetra nulla eu mi mattis gravida.
+                {{blog?.intro}}
             </p>
-            
-            <p>
-                Proin blandit vulputate diam quis pulvinar. Fusce non libero sodales, dictum sem sed, ornare enim. Maecenas efficitur est vel placerat eleifend. Donec vel quam sollicitudin, bibendum odio eget, varius elit. Fusce semper mauris ut elit dignissim, ac imperdiet massa ullamcorper.
+            <p *ngFor="let data of blog?.paragraph">
+                {{data?.content}}
             </p>
-
-            <p>
-                Suspendisse viverra massa eget nibh ultricies mollis. Donec sed lorem tincidunt, ultrices ligula ut, euismod sem. Mauris nec tincidunt diam. Donec varius magna vitae velit consectetur efficitur. Sed rutrum aliquet ligula. Cras non pellentesque nisi, id laoreet nibh. Aliquam in ante elit. Praesent blandit nibh ac justo auctor pretium. Maecenas mauris metus, vulputate ac volutpat sit amet, facilisis quis odio. Nam ut commodo neque.
-            </p>
-
+            <div>
+                <h3 class="mb-4" style="color: var(--black); font-weight: 600;">Conclusion: </h3>
+                {{blog?.conclusion}}
+            </div>
             <div class="tags mb-20 mt-16">
                 <app-tag-chip [name]="'Finance'"></app-tag-chip>
                 <app-tag-chip [name]="'Social'"></app-tag-chip>
             </div>
         </div>
 
-        <div class="reply">
+        <!-- <div class="reply">
             <div class="reply-card">
                 <div class="reply-author">
                     <div class="reply-author-img">
@@ -54,7 +52,7 @@
                     <input type="text" class="w-full">
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
 </div>

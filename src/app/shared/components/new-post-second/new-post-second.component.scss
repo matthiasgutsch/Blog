@@ -2,9 +2,18 @@
     @apply flex;
     column-count: 2;
 
+    @media screen and (max-width: 600px) {
+        column-count: 1;
+        @apply flex-col p-16;
+    }
+
     &-content,
     &-image {
         width: 50%;
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
     }
 
     &-image {
@@ -17,6 +26,10 @@
     &-content {
         @apply px-24 py-44;
         background-color: #f8f7f3;
+
+        @media screen and (max-width: 600px) {
+            @apply px-16 py-24;
+        }
     }
 
     &-title {
@@ -48,4 +61,12 @@
             transition: all 0.2s ease;
         }
     }
+}
+
+.typo{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient: vertical;  
 }

@@ -1,4 +1,8 @@
 .blog {
+
+    &-image {
+        @apply mx-auto;
+    }
     &-wrapper {
         padding-top: 5.4rem;
         margin: 0 18rem;

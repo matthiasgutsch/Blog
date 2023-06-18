@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataSharingService } from 'src/app/shared/service/data-sharing.service';
 
 @Component({
   selector: 'app-blog-detail',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class BlogDetailComponent {
 
+  blog: any;
+  constructor(private dataService: DataSharingService) {}
+
+  ngOnInit(): void {
+    this.dataService.getProject("1").subscribe(res => {
+      console.log(res)
+      this.blog = res;
+    })
+    }
 }

@@ -19,7 +19,9 @@ import { LoadMoreBtnComponent } from './shared/components/load-more-btn/load-mor
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import {HttpClientModule} from '@angular/common/http';
 import { NewPostSecondComponent } from './shared/components/new-post-second/new-post-second.component';
-import { TagChipComponent } from './shared/components/tag-chip/tag-chip.component'
+import { TagChipComponent } from './shared/components/tag-chip/tag-chip.component';
+import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { LogoComponent } from './shared/components/logo/logo.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +37,9 @@ import { TagChipComponent } from './shared/components/tag-chip/tag-chip.componen
     ContactComponent,
     LoadMoreBtnComponent,
     NewPostSecondComponent,
-    TagChipComponent
+    TagChipComponent,
+    AboutMeComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,
