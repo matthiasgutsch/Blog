@@ -1,9 +1,11 @@
 <article class="flex gap-8 blog-sm">
     <div class="blog-sm-image">
-        <img src="../../../../assets/images/1.jpg" alt="blog-image">
+        <img [src]="post?.thumbnail" [alt]="post?.title">
     </div>
     <div>
-        <h5 class="blog-sm-title">Aenean mattisg tortor act sapen congue molestie</h5>
-        <div class="blog-sm-date date">PHOTOGRAPHY - NOV 11, 2020</div>
+        <h5 class="blog-sm-title">
+            <a [routerLink]="['blog', post?.id]">{{post?.title}} </a>
+        </h5>
+        <div class="blog-sm-date date">{{post?.tags}} - {{post?.date}}</div>
     </div>
 </article>

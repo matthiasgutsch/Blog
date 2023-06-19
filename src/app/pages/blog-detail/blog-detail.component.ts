@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { BlogPost } from 'src/app/shared/interfaces/blog-post.interface';
 import { DataSharingService } from 'src/app/shared/service/data-sharing.service';
 
 @Component({
@@ -8,13 +10,15 @@ import { DataSharingService } from 'src/app/shared/service/data-sharing.service'
 })
 export class BlogDetailComponent {
 
-  blog: any;
-  constructor(private dataService: DataSharingService) {}
+  blog: BlogPost;
+  constructor(private dataService: DataSharingService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.dataService.getProject("1").subscribe(res => {
-      console.log(res)
-      this.blog = res;
+    this.route.params.subscribe(params => {   
+      this.dataService.getProject(params['id']).subscribe(blog => {
+        console.log(blog)
+        this.blog = blog;
+      })
     })
     }
 }

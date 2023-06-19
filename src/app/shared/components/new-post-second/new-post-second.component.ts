@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { BlogPost } from '../../interfaces/blog-post.interface';
 
 @Component({
   selector: 'app-new-post-second',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./new-post-second.component.scss']
 })
 export class NewPostSecondComponent {
+  @Input() post: BlogPost;
 
 }

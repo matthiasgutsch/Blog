@@ -1,7 +1,7 @@
 <div class="custom-container mb-12">
     <img src="../../../assets/images/slave.jpg" alt="" class="blog-image">
     <div class="blog-wrapper">
-        <div class="date">ART, TRAVEL - NOV 17, 2020</div>
+        <div class="date">{{blog?.tags}} - {{blog?.date}}</div>
         <div class="title">{{blog?.title}}</div>
         <div class="description">
             <p>
@@ -10,13 +10,17 @@
             <p *ngFor="let data of blog?.paragraph">
                 {{data?.content}}
             </p>
-            <div>
-                <h3 class="mb-4" style="color: var(--black); font-weight: 600;">Conclusion: </h3>
+
+            <h3 class="mb-4" style="color: var(--black); font-weight: 600;" *ngIf="blog?.conclusion">Conclusion: </h3>
+            <p>
                 {{blog?.conclusion}}
-            </div>
+            </p>
+
             <div class="tags mb-20 mt-16">
-                <app-tag-chip [name]="'Finance'"></app-tag-chip>
-                <app-tag-chip [name]="'Social'"></app-tag-chip>
+                <app-tag-chip [name]="blog?.tags"></app-tag-chip>
+                <!-- <ng-container *ngFor="let tag of blog?.tags">
+                </ng-container> -->
+                <!-- <app-tag-chip [name]="'Social'"></app-tag-chip> -->
             </div>
         </div>
 

@@ -43,8 +43,16 @@
     }
 
     &-title,
-    &-discription {
+    &-description {
         margin-bottom: 1.2rem;
+    }
+
+    &-description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
     }
 
     &-title {

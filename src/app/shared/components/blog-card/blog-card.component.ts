@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { BlogPost } from '../../interfaces/blog-post.interface';
 
 @Component({
   selector: 'app-blog-card',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog-card.component.scss']
 })
 export class BlogCardComponent {
+  @Input() post: BlogPost;
 
   ngOnInit(): void {
 

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { BlogPost } from '../../interfaces/blog-post.interface';
 
 @Component({
   selector: 'app-blog-card-sm',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog-card-sm.component.scss']
 })
 export class BlogCardSmComponent {
+  @Input() post: BlogPost;
+
 
   getRandomLinks(): string {
     return `https://picsum.photos/500`

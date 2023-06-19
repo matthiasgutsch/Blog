@@ -21,7 +21,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { NewPostSecondComponent } from './shared/components/new-post-second/new-post-second.component';
 import { TagChipComponent } from './shared/components/tag-chip/tag-chip.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
-import { LogoComponent } from './shared/components/logo/logo.component'
+import { LogoComponent } from './shared/components/logo/logo.component';
+import { HomeComponent } from './pages/home/home.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { LogoComponent } from './shared/components/logo/logo.component'
     NewPostSecondComponent,
     TagChipComponent,
     AboutMeComponent,
-    LogoComponent
+    LogoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

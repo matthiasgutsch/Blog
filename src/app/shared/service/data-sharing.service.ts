@@ -21,6 +21,11 @@ export class DataSharingService {
     }
   }
 
+  getBlogs():  Observable<any> {
+    return this.http.get(this.path).pipe(map((res: any) => res?.blog),
+    catchError(DataSharingService.handleError))
+  }
+
   getProject(blogId: string | number): Observable<any> {
     console.log(blogId)
     return this.http.get(this.path)
