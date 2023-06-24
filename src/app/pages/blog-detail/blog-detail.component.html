@@ -1,5 +1,5 @@
 <div class="custom-container mb-12">
-    <img src="../../../assets/images/slave.jpg" alt="" class="blog-image">
+    <img [src]="blog?.thumbnail" alt="" class="blog-image">
     <div class="blog-wrapper">
         <div class="date">{{blog?.tags}} - {{blog?.date}}</div>
         <div class="title">{{blog?.title}}</div>
@@ -7,8 +7,7 @@
             <p>
                 {{blog?.intro}}
             </p>
-            <p *ngFor="let data of blog?.paragraph">
-                {{data?.content}}
+            <p *ngFor="let data of blog?.paragraph" [innerHTML]="data?.content">
             </p>
 
             <h3 class="mb-4" style="color: var(--black); font-weight: 600;" *ngIf="blog?.conclusion">Conclusion: </h3>

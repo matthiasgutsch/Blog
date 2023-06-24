@@ -2,6 +2,10 @@
 
     &-image {
         @apply mx-auto;
+        width: 90rem;
+        height: auto;
+        max-height: 57.5rem;
+        object-fit: contain;
     }
     &-wrapper {
         padding-top: 5.4rem;

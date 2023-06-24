@@ -1,6 +1,8 @@
 .article {
     @apply flex;
     column-count: 2;
+    max-height: 460px;
+    overflow-y: hidden;
 
     @media screen and (max-width: 600px) {
         column-count: 1;
