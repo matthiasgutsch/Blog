@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "angular.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "devCommand": "ng build",
+          "outputDirectory": "dist",
+          "buildCommand": "ng build --prod && ng run blog:server:production",
+          "output": {
+            "public/index.html": "/index.html",
+            "dist/browser/*": "/dist/browser/",
+            "dist/server/*": "/dist/server/"
+          }
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
+  
