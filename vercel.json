@@ -5,7 +5,7 @@
         "src": "package.json",
         "use": "@vercel/static-build",
         "config": {
-          "devCommand": "ng build",
+          "devCommand": "node dist/server/main.js",
           "outputDirectory": "dist",
           "buildCommand": "ng build --prod && ng run blog:server:production",
           "output": {
