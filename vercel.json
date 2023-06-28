@@ -1,19 +1,26 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist/blog/browser"
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "devCommand": "ng build",
+          "outputDirectory": "dist",
+          "buildCommand": "ng build --prod && ng run blog:server:production",
+          "output": {
+            "public/index.html": "/index.html",
+            "dist/browser/*": "/dist/browser/",
+            "dist/server/*": "/dist/server/"
+          }
+        }
       }
-    },
-    {
-      "src": "server.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "server.js" }
-  ]
-}
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
+  
