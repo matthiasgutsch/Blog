@@ -4,16 +4,21 @@
     max-height: 460px;
     overflow-y: hidden;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         column-count: 1;
-        @apply flex-col p-16;
+        @apply flex-col p-0 h-auto;
+        max-height: 585px;
+    }
+
+    @media screen and (max-width: 600px) {
+        max-height: 485px;
     }
 
     &-content,
     &-image {
         width: 50%;
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 768px) {
             width: 100%;
         }
     }
@@ -29,7 +34,7 @@
         @apply px-24 py-44;
         background-color: #f8f7f3;
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 768px) {
             @apply px-16 py-24;
         }
     }
