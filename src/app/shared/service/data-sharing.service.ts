@@ -1,5 +1,5 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { BehaviorSubject, Observable, Subject, catchError, map, throwError } from 'rxjs';
 
 @Injectable({
@@ -7,34 +7,28 @@ import { BehaviorSubject, Observable, Subject, catchError, map, throwError } fro
 })
 export class DataSharingService {
 
-  path = '/assets/data/data.json'
+  // path = '/assets/data/data.json'
+  path = `https://keval101.github.io/blog-json/db.json`
 
   changedSlides$ = new Subject();
   
-  constructor(private http: HttpClient) { }
-
-  private static handleError(error: HttpErrorResponse) {
-    if (error.error instanceof ErrorEvent) {
-      return throwError(`Client-Side error: ${error.error.message}`);
-    } else {
-      return throwError(`Backend returned code ${error.status} (body was omitted)`);
-    }
-  }
+  constructor(
+    private http: HttpClient,
+    @Inject(PLATFORM_ID) private platformId: any) { }
 
   getBlogs():  Observable<any> {
-    return this.http.get(this.path).pipe(map((res: any) => res?.blog),
-    catchError(DataSharingService.handleError))
+    // return this.http.get(this.path).pipe(map((res: any) => res?.blog))
+    return this.http.get(this.path).pipe(map((res: any) => res?.blog))
   }
 
   getProject(blogId: string | number): Observable<any> {
-    console.log(blogId)
+    // return this.http.get(this.path)
     return this.http.get(this.path)
     .pipe(
       map((res: any) => {
         console.log(res)
         return res.blog.find(item => item.id == blogId);
-      }),
-      catchError(DataSharingService.handleError))
+      }))
   }
 
 }

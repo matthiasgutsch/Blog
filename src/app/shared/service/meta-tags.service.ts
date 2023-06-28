@@ -1,4 +1,4 @@
-import { DOCUMENT } from '@angular/common';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
@@ -19,7 +19,9 @@ export class MetaTagsService {
     private _meta: Meta, 
     private title: Title,
     @Inject(PLATFORM_ID) private platformId: any,
-    @Inject(DOCUMENT) private dom) { }
+    @Inject(DOCUMENT) private dom) { 
+      this.isBrowser = isPlatformBrowser(this.platformId)
+    }
 
   createCanonicalLink(url?: string) {
     if(this.isBrowser) {
