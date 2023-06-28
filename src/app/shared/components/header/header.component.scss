@@ -1,8 +1,17 @@
 .navbar {
     @apply flex justify-between py-14;
 
+    @media screen and (max-width: 600px) {
+        @apply flex-col h-screen justify-center items-center gap-20;
+    }
+
     &-list{
         @apply flex gap-20;
+
+        @media screen and (max-width: 600px) {
+            @apply flex-col justify-center items-center gap-14;
+            font-size: 2.4rem;
+        }
 
         &-item {
             @apply cursor-pointer;
@@ -20,7 +29,12 @@
         @apply flex gap-8 cursor-pointer;
         
         i {
-            font-size: 1.6rem
+            font-size: 1.6rem;
+
+            @media screen and (max-width: 600px) {
+                font-size: 2.2rem;
+            }
+    
         }
     }
 

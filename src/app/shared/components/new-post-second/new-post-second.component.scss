@@ -11,6 +11,10 @@
     }
 
     @media screen and (max-width: 600px) {
+        max-height: 600px;
+    }
+
+    @media screen and (max-width: 450px) {
         max-height: 485px;
     }
 
@@ -27,6 +31,10 @@
         img {
             height: 100%;
             object-fit: cover;
+
+            @media screen and (max-width: 600px) {
+                height: 260px;
+            }
         }
     }
 
@@ -36,6 +44,10 @@
 
         @media screen and (max-width: 768px) {
             @apply px-16 py-24;
+        }
+
+        @media screen and (max-width: 600px) {
+            @apply px-12 py-16;
         }
     }
 

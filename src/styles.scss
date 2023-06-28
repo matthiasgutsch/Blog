@@ -49,7 +49,7 @@ body {
 
 // Reusable CSS
 .custom-container {
-    @apply w-full px-4 mx-auto;
+    @apply w-full p-4 mx-auto;
 
     @media screen and (min-width: 576px){
         max-width: 540px;

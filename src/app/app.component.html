@@ -1,6 +1,12 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<app-header [isMenuOpened]="isMenuOpened" [class.faded-in]="isMenuOpened" [class.faded-out]="!isMenuOpened"></app-header>
+<router-outlet (activate)="routerChange()"></router-outlet>
 <app-footer></app-footer>
+
+<ng-container>
+  <button class="humburger" (click)="openMenu()">
+      <i class="fa-solid fa-arrow-right" [class.rotate-icon]="isMenuOpened"></i>
+  </button>
+</ng-container>
 
 <!-- <div class="wrapper">
   <owl-carousel-o [options]="customOptions">

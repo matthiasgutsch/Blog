@@ -16,7 +16,9 @@
             </p>
 
             <div class="tags mb-20 mt-16">
-                <app-tag-chip [name]="blog?.tags"></app-tag-chip>
+                <ng-container *ngFor="let tag of blog?.tags">
+                    <app-tag-chip [name]="tag"></app-tag-chip>
+                </ng-container>
                 <!-- <ng-container *ngFor="let tag of blog?.tags">
                 </ng-container> -->
                 <!-- <app-tag-chip [name]="'Social'"></app-tag-chip> -->

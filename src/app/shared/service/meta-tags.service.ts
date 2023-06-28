@@ -34,25 +34,29 @@ export class MetaTagsService {
     }
   }
 
-  updateMetaTags(meta: IMetaTags, image: string): void {
+  updateMetaTags(meta: IMetaTags): void {
     this.title.setTitle(meta?.title);
 
     this._meta.updateTag( { name: "description", content: meta.description }, "name='description'");
     this._meta.updateTag( { name: "keywords", content: meta.keywords }, "name='keywords'");
-    this._meta.updateTag( { name: "image", content: image }, "name='image'");
 
     this._meta.updateTag( { property: 'og:type', content: 'website' }, "property='og:type'");
     // this._meta.updateTag( { property: 'og:url', content: this.pageUrl }, "property='og:url'");
     this._meta.updateTag( { property: 'og:title', content: meta.title }, "property='og:title'");
     this._meta.updateTag( { property: 'og:description', content: meta.description }, "property='og:description'");
-    this._meta.updateTag( { property: 'og:image:secure_url', content: image }, "property='og:image:secure_url'");
 
     
     this._meta.updateTag({ name: 'twitter:creator', content: `@KevalVadhiya`}, "name='twitter:creator'")
     this._meta.updateTag({ name: 'twitter:site', content: `@QuickBlogs`}, "name='twitter:site'")
     this._meta.updateTag({ name: 'twitter:title', content: meta.title}, "name='twitter:title'")
     this._meta.updateTag({ name: 'twitter:description', content: meta.description}, "name='twitter:description'")
-    this._meta.updateTag({ name: 'twitter:image', content: image}, "name='twitter:image'")
     this._meta.updateTag({ name: 'twitter:card', content: 'summary_large_image'}, "name='twitter:card'")
+  }
+
+  updateMetaImage(image: string) {
+    this._meta.updateTag( { name: "image", content: image }, "name='image'");
+    this._meta.updateTag( { property: 'og:image:secure_url', content: image }, "property='og:image:secure_url'");
+    this._meta.updateTag({ name: 'twitter:image', content: image}, "name='twitter:image'")
+    
   }
 }

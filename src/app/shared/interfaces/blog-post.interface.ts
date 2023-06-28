@@ -5,7 +5,7 @@ export interface BlogPost {
     paragraph: {content: string}[],
     conclusion: string,
     date?: string,
-    tags?: string,
+    tags?: string[],
     images?: string[]
     thumbnail: string
 }
