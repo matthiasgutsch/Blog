@@ -52,7 +52,7 @@ export class MetaTagsService {
     this._meta.updateTag({ name: 'twitter:site', content: `@QuickBlogs`}, "name='twitter:site'")
     this._meta.updateTag({ name: 'twitter:title', content: meta.title}, "name='twitter:title'")
     this._meta.updateTag({ name: 'twitter:description', content: meta.description}, "name='twitter:description'")
-    this._meta.updateTag({ name: 'twitter:image', content: `https://bhagavad-gita.netlify.app/assets/krishna-arjuna.jpg`}, "name='twitter:image'")
+    this._meta.updateTag({ name: 'twitter:image', content: image}, "name='twitter:image'")
     this._meta.updateTag({ name: 'twitter:card', content: 'summary_large_image'}, "name='twitter:card'")
   }
 }
