@@ -16,8 +16,12 @@
 
     &-logo {
         @apply font-semibold;
-        font-size: 3rem;
+        font-size: 5rem;
         color: var(--black);
+
+        app-logo div {
+            width: 150px
+        }
 
         @media screen and (max-width: 500px) {
             font-size: 4rem;
