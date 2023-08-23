@@ -6,7 +6,7 @@
     <div class="blog-date date">{{post?.tags}} - {{post?.date}}</div>
 
     <h5 class="blog-title">
-        <a [routerLink]="['blog', post?.id]">{{post?.title}}</a>
+        <a [routerLink]="['/blog', post?.id]">{{post?.title}}</a>
     </h5>
 
     <p class="blog-description">{{post?.intro}}</p>

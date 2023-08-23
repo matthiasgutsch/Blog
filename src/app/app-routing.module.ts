@@ -4,6 +4,7 @@ import { BlogDetailComponent } from './pages/blog-detail/blog-detail.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { HomeComponent } from './pages/home/home.component';
+import { BlogListComponent } from './pages/blog-list/blog-list.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
   path: 'blog/:id',
   component: BlogDetailComponent
+  },
+  {
+    path: 'blogs/:type',
+    component: BlogListComponent
   },
   {
     path: 'contact-us',

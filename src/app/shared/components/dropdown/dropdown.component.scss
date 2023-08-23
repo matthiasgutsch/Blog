@@ -1,0 +1,15 @@
+.dropdown {
+    background-color: #ffd46d;
+    min-width: 250px;
+    transition: all 2s ease;
+    color: #000;
+
+    p {
+        @apply p-6;
+        transition: all 0.2s ease;
+        &:hover {
+            @apply bg-white text-black;
+            transition: all 0.2s ease;
+        }
+    }
+}

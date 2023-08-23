@@ -23,6 +23,8 @@ import { TagChipComponent } from './shared/components/tag-chip/tag-chip.componen
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { LogoComponent } from './shared/components/logo/logo.component';
 import { HomeComponent } from './pages/home/home.component'
+import { DropdownComponent } from './shared/components/dropdown/dropdown.component';
+import { BlogListComponent } from './pages/blog-list/blog-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +43,9 @@ import { HomeComponent } from './pages/home/home.component'
     TagChipComponent,
     AboutMeComponent,
     LogoComponent,
-    HomeComponent
+    HomeComponent,
+    DropdownComponent,
+    BlogListComponent
   ],
   imports: [
     BrowserModule,

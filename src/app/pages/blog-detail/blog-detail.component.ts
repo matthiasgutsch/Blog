@@ -1,6 +1,6 @@
 import { isPlatformBrowser } from '@angular/common';
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BlogPost } from 'src/app/shared/interfaces/blog-post.interface';
 import { DataSharingService } from 'src/app/shared/service/data-sharing.service';
 import { MetaTagsService } from 'src/app/shared/service/meta-tags.service';
@@ -18,14 +18,14 @@ export class BlogDetailComponent {
     private dataService: DataSharingService, 
     private route: ActivatedRoute,
     private metaService: MetaTagsService,
+    private router: Router,
     @Inject(PLATFORM_ID) private platformId: any) {
       this.isBrowser = isPlatformBrowser(this.platformId)
     }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {   
-      this.dataService.getProject(params['id']).subscribe(blog => {
-        console.log(blog)
+      this.dataService.getBlogDetail(params['id']).subscribe(blog => {
         this.blog = blog;
 
         const meta = {
@@ -40,5 +40,9 @@ export class BlogDetailComponent {
         }
       })
     })
+    }
+
+    getFilterBlogs(type: string) {
+      this.router.navigate(['/blogs', type.toLocaleLowerCase()])
     }
 }

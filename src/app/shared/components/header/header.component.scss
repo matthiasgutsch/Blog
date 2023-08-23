@@ -14,10 +14,17 @@
         }
 
         &-item {
-            @apply cursor-pointer;
+            @apply cursor-pointer relative;
             transition: all 0.2s ease-in;
             color: var(--black);
 
+            a {
+                @apply flex items-center;
+
+                i {
+                    @apply block mt-2 ml-6;
+                }
+            }
             &:hover {
                 @apply text-gray-500;
                 transition: all 0.2s ease-in;
@@ -49,6 +56,13 @@
     }
 }
 
+
 header {
     // @apply bg-slate-100;
+}
+
+::ng-deep .navbar-list-item app-dropdown {
+    @apply absolute z-10;
+    top: 36px;
+    left: -6px;
 }

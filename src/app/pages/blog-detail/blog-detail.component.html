@@ -7,8 +7,15 @@
             <p>
                 {{blog?.intro}}
             </p>
-            <p *ngFor="let data of blog?.paragraph" [innerHTML]="data?.content">
-            </p>
+            <ng-container *ngFor="let data of blog?.paragraph; let i = index">
+                <p [innerHTML]="data?.content"></p>
+                <ng-container *ngIf="blog?.paragraph.length > 2 && i == 2 && blog?.images.path">
+                    <div class="mb-8 text-center">
+                        <img [src]="blog?.images?.path" [alt]="blog?.images?.title" class="mx-auto">
+                        <small>{{blog?.images?.title}}</small>
+                    </div>
+                </ng-container>
+            </ng-container>
 
             <h3 class="mb-4" style="color: var(--black); font-weight: 600;" *ngIf="blog?.conclusion">Conclusion: </h3>
             <p>
@@ -17,7 +24,7 @@
 
             <div class="tags mb-20 mt-16">
                 <ng-container *ngFor="let tag of blog?.tags">
-                    <app-tag-chip [name]="tag"></app-tag-chip>
+                    <app-tag-chip [name]="tag" (click)="getFilterBlogs(tag)"></app-tag-chip>
                 </ng-container>
                 <!-- <ng-container *ngFor="let tag of blog?.tags">
                 </ng-container> -->

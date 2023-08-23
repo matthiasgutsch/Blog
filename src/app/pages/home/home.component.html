@@ -1,7 +1,7 @@
 
 <div class="custom-container">
     <owl-carousel-o [options]="customOptions" (change)="getPassedData($event)">
-        <ng-container *ngFor="let blog of blogs">
+        <ng-container *ngFor="let blog of blogs.reverse()">
             <ng-template class="slide" carouselSlide>
                 <app-new-post-second [post]="blog"></app-new-post-second>
             </ng-template>
@@ -16,14 +16,14 @@
                 <app-blog-card [post]="blog"></app-blog-card>
             </div>
         </div>
-        <app-load-more-btn *ngIf="blogs.length"></app-load-more-btn>
+        <app-load-more-btn *ngIf="blogs.length >= 10"></app-load-more-btn>
     </ng-container>
 
     <!-- post-list-by-tags -->
     <ng-container>
         <h1 class="section-title">Trending Blogs</h1>
         <div class="flex gap-8 flex-wrap">
-            <ng-container *ngFor="let blog of blogs">
+            <ng-container *ngFor="let blog of blogs.reverse()">
                 <app-blog-card-sm [post]="blog"></app-blog-card-sm>
             </ng-container>
         </div>

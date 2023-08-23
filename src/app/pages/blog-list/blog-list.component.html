@@ -1,0 +1,11 @@
+<div class="custom-container mt-12">
+    <!-- post-list-section -->
+    <ng-container>
+        <div class="flex gap-8 flex-wrap">
+            <div *ngFor="let blog of blogs">
+                <app-blog-card [post]="blog"></app-blog-card>
+            </div>
+        </div>
+        <app-load-more-btn *ngIf="blogs.length >= 10"></app-load-more-btn>
+    </ng-container>
+</div>

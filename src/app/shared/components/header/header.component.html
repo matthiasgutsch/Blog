@@ -6,7 +6,11 @@
             </div>
             <ul class="navbar-list">
                 <li class="navbar-list-item"><a [routerLink]="['/']">Home</a></li>
-                <li class="navbar-list-item"><a [routerLink]="['blog']">Blog</a></li>
+                <li class="navbar-list-item"><a [routerLink]="['/']">Blog</a></li>
+                <!-- <li class="navbar-list-item">
+                    <a (click)="openOptions()" id="dropdown-open">Blog <i class="fa-solid fa-angle-down"></i></a>
+                    <app-dropdown id="dropdown" *ngIf="displayDropdown" [options]="blog_types" (emitSelectedValue)="selectedType($event)"></app-dropdown>
+                </li> -->
                 <li class="navbar-list-item"><a [routerLink]="['about-me']">About Me</a></li>
                 <li class="navbar-list-item"><a [routerLink]="['contact-us']">Contact Us</a></li>
             </ul>

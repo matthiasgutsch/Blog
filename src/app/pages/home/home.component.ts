@@ -55,7 +55,6 @@ export class HomeComponent {
       this.metaService.updateMetaTags(metaObject, thumbnail)
     }
     this.dataSharingService.getBlogs().subscribe(blogs => {
-      console.log(blogs)
       this.blogs = blogs;
     })
   }

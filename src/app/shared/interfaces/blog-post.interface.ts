@@ -6,6 +6,6 @@ export interface BlogPost {
     conclusion: string,
     date?: string,
     tags?: string[],
-    images?: string[]
+    images?: { path: string, title: string}
     thumbnail: string
 }

@@ -29,9 +29,9 @@
                 ],
             "conclusion": "While BTS and other K-pop groups enjoy tremendous success and popularity, it is crucial to understand the dark side of the industry they are a part of.The concept of slave contracts highlights the exploitative nature of the K-pop industry, with artists often facing limited personal freedom, exhausting schedules,financial exploitation, and challenges to their mental health. However, as the industry evolves, discussions surrounding fair",
             "thumbnail": "assets/images/slave.jpg",
-            "tags": "Social",
+           "tags": ["Social", "Drama"],
             "date": "Jun 19, 2023",
-            "images": []
+            "images": {}
         },
         {
             "title": "Paparazzi: Peering Behind the Glitz and Glamour",
@@ -53,9 +53,9 @@
                 ],
             "conclusion": "The reality of celebrity culture and the paparazzi industry goes far beyond the glitz and glamour portrayed in the media. It is essential to recognize the invasion of privacy, emotional toll, and societal consequences that result from this phenomenon. By questioning our own fascination with celebrity culture and demanding a more ethical approach from the media, we can contribute to a more balanced and compassionate society that respects the dignity and privacy of all individuals, regardless of their fame.",
             "thumbnail": "assets/images/paparazi.png",
-            "tags": "Social",
+            "tags": ["Social"],
             "date": "Jun 24, 2023",
-            "images": []
+            "images": {}
         },
         {
             "title": "Youth Ruining Our Religious Places",
@@ -74,9 +74,66 @@
                 ],
             "conclusion": "While it is important to recognize that not all youth are responsible for the destruction of religious places, it is crucial to address and mitigate this alarming trend. To counteract this destructive behavior, efforts must be made to enhance religious education, foster interfaith dialogue, and promote understanding and respect among diverse religious communities. Additionally, investing in youth empowerment programs, providing positive role models, and engaging young people in meaningful activities can channel their energies towards constructive endeavors, nurturing a sense of responsibility and stewardship towards religious places and communities. Only through collective efforts can we ensure that our religious sites remain cherished sanctuaries for generations to come.",
             "thumbnail": "assets/images/youth-spoilling.webp",
-            "tags": "Social, Public",
+            "tags": ["Social, Public"],
             "date": "Jun 24, 2023",
-            "images": []
+            "images": {}
+        },
+        {
+            "title": "Unraveling the Telgi Stamp Paper Scam: A 30,000 Crore Conspiracy",
+            "id": 4,
+            "intro": "Financial scandals have a way of shocking the world with their audacity and scale, leaving behind a trail of disbelief and skepticism. One such scandal that rocked India's financial landscape was the Telgi Stamp Paper Scam, a multi-crore conspiracy that involved counterfeit stamp papers and shook the foundations of the country's judicial and administrative systems. With an estimated value of 30,000 crore rupees, the Telgi Scam remains one of the most significant white-collar crimes in India's history.",
+            "paragraph": [
+                {
+                    "content": "<strong>The Mastermind Behind the Scheme:</strong><br> Abdul Karim Telgi, the man at the center of the scam, was a master forger and a criminal prodigy. Operating from Pune, Maharashtra, Telgi created a vast network that produced counterfeit stamp papers and other government documents. His connections reached deep into the bureaucracy, law enforcement, and even political circles, which enabled him to run his operation for over a decade."
+                },
+                {
+                    "content": "<strong>The Mechanics of the Scam:</strong><br> Telgi's operation involved producing fake stamp papers and selling them to banks, insurance companies, and other institutions that required legal documents. These forged papers were used for transactions, thus evading taxes and generating unaccounted money. By exploiting the gaps in the system and leveraging corruption, Telgi managed to distribute these counterfeit papers across multiple states in India." 
+                },
+                {
+                    "content": "<strong>The Ripple Effect:</strong><br> The consequences of the Telgi Scam extended far beyond financial losses. The legitimacy of countless property transactions, loans, and other legal transactions came under question. Courts were flooded with cases to ascertain the authenticity of the stamp papers used in various agreements. This not only overwhelmed the judicial system but also led to widespread public distrust in the legal process." 
+                },
+                {
+                    "content": "<strong>Unveiling the Scam:</strong><br> The unraveling of the scam began in 2001 when the police in Pune arrested Abdul Karim Telgi. A nationwide investigation revealed the staggering extent of his operation and the level of corruption involved. Telgi's arrest initiated a long legal battle, and his confessions exposed the depth of collusion between criminals, bureaucrats, and politicians." 
+                },
+                {
+                    "content": "<strong>The Legal Proceedings:</strong><br> The legal proceedings that followed the arrest of Telgi were complex and protracted. The investigation led to the exposure of numerous government officials and politicians who had aided and abetted the scam. Over 4,000 cases were registered against Telgi and his associates across multiple states. Despite his attempts to manipulate the judicial system, Telgi was ultimately sentenced to multiple terms of imprisonment." 
+                }
+                ],
+            "conclusion": "The Telgi Stamp Paper Scam remains a grim reminder of the lengths to which individuals can go to exploit systemic weaknesses for personal gain. While the scandal resulted in severe financial losses and legal chaos, it also prompted a reevaluation of the existing administrative and legal mechanisms in India. The need for vigilance against corruption, coupled with timely and effective reforms, is a lesson that society must heed to prevent history from repeating itself.",
+            "thumbnail": "assets/images/scam2003.jpg",
+            "tags": ["Financial"],
+            "date": "Aug 10, 2023",
+            "images": {}
+        },
+        {
+            "title": "Chandrayaan-3: India's Next Giant Leap in Lunar Exploration",
+            "id": 5,
+            "intro": "India's space agency, the Indian Space Research Organisation (ISRO), has been making waves in the global space community with its Chandrayaan missions. The Chandrayaan series represents a significant step forward in lunar exploration, and if Chandrayaan-3 is successful, it promises to be another milestone in India's space journey.",
+            "paragraph": [
+                {
+                    "content": "<strong>Scientific Discoveries and Lunar Exploration:</strong><br>The primary objective of Chandrayaan missions is to study the Moon's surface, composition, and geological history. A successful Chandrayaan-3 mission would continue this mission, potentially leading to groundbreaking discoveries about the Moon's past and its relationship with Earth. This information could be pivotal in our understanding of lunar evolution and its relevance to Earth's history."
+                },
+                {
+                    "content": "<strong>Technological Advancements:</strong><br>Each Chandrayaan mission incorporates cutting-edge technology and innovation. A successful Chandrayaan-3 would showcase India's technological prowess in space exploration, potentially attracting international collaborations and partnerships. This can accelerate technological advancements not only in India but also globally."
+                },
+                {
+                    "content": "<strong>National Pride:</strong><br>Successful space missions instill a sense of national pride and accomplishment. Chandrayaan-3 would undoubtedly be a source of immense pride for India and its citizens. It would bolster the nation's reputation in the global space community."
+                },
+                {
+                    "content": "<strong>International Collaboration and Space Industry Growth:</strong><br>Space exploration often fosters collaboration between nations. A successful Chandrayaan-3 could lead to increased cooperation with other space agencies, such as NASA and ESA. This collaborative spirit benefits humanity as a whole, as we collectively work towards understanding our universe.<br>>Furthermore Chandrayaan missions stimulate the growth of the space industry. They drive the development of new technologies, promote commercial space activities, and create high-skilled job opportunities."
+                },
+                {
+                    "content": "<strong>Inspiration and Education:</strong><br>Chandrayaan missions have the power to inspire young minds. They pique interest in science, technology, engineering, and mathematics (STEM) disciplines, encouraging more students to pursue careers in these fields. This has a lasting positive impact on a nation's educational landscape."
+                }
+                ],
+            "conclusion": "The potential benefits are clear. India's continued commitment to lunar exploration not only advances scientific knowledge but also has far-reaching implications for technology, education, international collaboration, and national pride. If Chandrayaan-3 succeeds, it will undoubtedly be a giant leap forward in India's space exploration journey. Stay tuned for updates on this exciting mission!",
+            "thumbnail": "assets/images/chandrayan3.jpg",
+            "tags": ["Science"],
+            "date": "Aug 23, 2023",
+            "images": {
+                "path": "assets/images/chandrayan3-model.jpg",
+                "title": "Chandrayaan-3 Model"
+            }
         }
     ]
 }
