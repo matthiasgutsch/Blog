@@ -7,8 +7,8 @@ import { BehaviorSubject, Observable, Subject, catchError, filter, map, throwErr
 })
 export class DataSharingService {
 
-  path = '/assets/data/data.json'
-  // path = `https://keval101.github.io/blog-json/db.json`
+  // path = '/assets/data/data.json'
+  path = `https://keval101.github.io/blog-json/db.json`
 
   changedSlides$ = new Subject();
   
