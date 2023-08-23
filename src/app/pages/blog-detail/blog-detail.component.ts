@@ -33,11 +33,7 @@ export class BlogDetailComponent {
           description: this.blog?.intro,
           keywords: '',
         }
-        this.metaService.updateMetaTags(meta, '')
-        if(this.isBrowser) {
-          const thumbnail = `${window.location.origin}/${this.blog?.thumbnail}`
-          this.metaService.updateMetaTags(meta, thumbnail)
-        }
+        this.metaService.updateMetaTags(meta, this.blog?.thumbnail)
       })
     })
     }

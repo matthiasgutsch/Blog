@@ -49,7 +49,7 @@ export class MetaTagsService {
 
     
     this._meta.updateTag({ name: 'twitter:creator', content: `@KevalVadhiya`}, "name='twitter:creator'")
-    this._meta.updateTag({ name: 'twitter:site', content: `@QuickBlogs`}, "name='twitter:site'")
+    this._meta.updateTag({ name: 'twitter:site', content: `@quick_blogs`}, "name='twitter:site'")
     this._meta.updateTag({ name: 'twitter:title', content: meta.title}, "name='twitter:title'")
     this._meta.updateTag({ name: 'twitter:description', content: meta.description}, "name='twitter:description'")
     this._meta.updateTag({ name: 'twitter:image', content: image}, "name='twitter:image'")

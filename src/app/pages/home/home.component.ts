@@ -49,11 +49,7 @@ export class HomeComponent {
       description: "Explore our diverse collection of blog posts covering a wide range of topics. From travel and lifestyle to technology and fashion, our blog has something for everyone. Get inspired and stay informed with our captivating content.",
       keywords: 'Quick Blog, Blog posts, Inspiring, Passion, Travel, Lifestyle, Technology, Fashion, Explore, Diverse, Stay informed',
     }
-    this.metaService.updateMetaTags(metaObject, '')
-    if(this.isBrowser) {
-      const thumbnail = `${window.location.origin}/assets/images/logo.png'`
-      this.metaService.updateMetaTags(metaObject, thumbnail)
-    }
+    this.metaService.updateMetaTags(metaObject, 'https://quickblogs.vercel.app/assets/images/logo.png');
     this.dataSharingService.getBlogs().subscribe(blogs => {
       this.blogs = blogs;
     })
