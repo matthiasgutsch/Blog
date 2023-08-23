@@ -26,6 +26,7 @@
     "@angular/router": "^16.0.0",
     "@nguniversal/express-engine": "^16.0.2",
     "@nguniversal/module-map-ngfactory-loader": "^8.2.6",
+    "@vercel/analytics": "^1.0.2",
     "express": "^4.15.2",
     "ngx-owl-carousel-o": "^16.0.0",
     "rxjs": "~7.8.0",
