@@ -29,9 +29,9 @@ export class BlogDetailComponent {
         this.blog = blog;
 
         const meta = {
-          title: this.blog?.title,
-          description: this.blog?.intro,
-          keywords: '',
+          title: this.blog?.meta?.title ?? this.blog?.title,
+          description: this.blog?.meta?.description ?? this.blog?.intro,
+          keywords: this.blog?.meta?.keywords ??  '',
         }
         this.metaService.updateMetaTags(meta, this.blog?.thumbnail)
       })

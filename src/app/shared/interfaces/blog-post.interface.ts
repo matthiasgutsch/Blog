@@ -7,5 +7,10 @@ export interface BlogPost {
     date?: string,
     tags?: string[],
     images?: { path: string, title: string}
-    thumbnail: string
+    thumbnail: string,
+    meta: {
+        title?: string
+        description?: string
+        keywords?: string
+    }
 }
