@@ -1,21 +1,17 @@
 .article {
     @apply flex;
     column-count: 2;
-    max-height: 460px;
+    height: 460px;
     overflow-y: hidden;
 
     @media screen and (max-width: 768px) {
         column-count: 1;
         @apply flex-col p-0 h-auto;
-        max-height: 585px;
+        height: 585px;
     }
 
     @media screen and (max-width: 600px) {
-        max-height: 600px;
-    }
-
-    @media screen and (max-width: 450px) {
-        max-height: 485px;
+        height: 510px;
     }
 
     &-content,
@@ -32,6 +28,10 @@
             height: 100%;
             object-fit: cover;
 
+            @media screen and (max-width: 768px) {
+                height: 300px;
+            }
+
             @media screen and (max-width: 600px) {
                 height: 260px;
             }
@@ -43,7 +43,7 @@
         background-color: #f8f7f3;
 
         @media screen and (max-width: 768px) {
-            @apply px-16 py-24;
+            @apply px-16 py-24 flex-grow;
         }
 
         @media screen and (max-width: 600px) {

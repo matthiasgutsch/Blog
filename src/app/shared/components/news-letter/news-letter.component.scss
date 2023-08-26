@@ -25,6 +25,7 @@
     @media screen and (max-width: 768px) {
         @apply px-10 py-14;
         width: 60rem;
+        grid-template-columns: 360px;
     }
 
     @media screen and (max-width: 600px) {
