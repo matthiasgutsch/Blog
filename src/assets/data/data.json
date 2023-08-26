@@ -134,6 +134,87 @@
                 "path": "assets/images/chandrayan3-model.jpg",
                 "title": "Chandrayaan-3 Model"
             }
+        },
+        {
+            "title": "2023 Chess World Championship Runner-Up: R Praggnanandhaa",
+            "id": 6,
+            "intro": "R Praggnanandhaa, India's teenage chess prodigy, has been making waves in the chess world with his exceptional skills and achievements. Born in 2005, Praggnanandhaa became the youngest International Master in history at the age of 10 years and 10 months.",
+            "paragraph": [
+              {
+                "content": "His talent and dedication to the game have earned him numerous accolades, including victories at various national and international tournaments. In 2018, he made headlines by becoming the second-youngest Grandmaster ever, achieving this feat at just 12 years and 10 months old."
+              },
+              {
+                "content": "Praggnanandhaa's remarkable journey continued as he qualified for the Chess World Cup in 2021. This prestigious event brings together some of the best chess players from around the globe to compete for top honors. Despite being one of the youngest participants in the tournament, Praggnanandhaa showcased his skills and demonstrated his potential as a future chess champion."
+              },
+              {
+                "content": "Rameshbabu Praggnanandhaa of India may have lost the FIDE World Cup final against Magnus Carlsen of Norway on Thursday after a gruelling three-day match, but he won hearts with the outpouring of congratulations for the young chess prodigy."
+              },
+              {
+                "content": "The 18-year-old Tamil Nadu adolescent prodigy defeated Carlen in the tiebreaker before Carlen was able to win the FIDE World Cup for the first time in his career. After the second game of the tiebreaker, Carlsen's victory was officially declared. On Tuesday and Wednesday, the two players each played one draw."
+              },
+              {
+                "content": "Pragg was the youngest World Cup finalist ever and the youngest World Cup champion. He turned 18 during the World Cup. Pragg, who was seeded number 31, became the World Cup champion despite having the lowest seed."
+              },
+              {
+                "content": "Cricket legend Sachin Tendulkar also wished Praggnanandhaa on an incredible tournament. “Congratulations on an incredible tournament, @rpragchess! Keep chasing your dreams and making India proud,” he wrote."
+              },
+              {
+                "images": {
+                  "path": "https://i.imgur.com/PmAe9wG.png",
+                  "title": "Sachin Tendulkar Congratulated R Praggnanandhaa"
+                }
+              }
+            ],
+            "conclusion": "His rise to prominence serves as an inspiration to aspiring chess players worldwide, highlighting that age is no barrier when it comes to achieving greatness in this intellectual sport. With each milestone he achieves, Praggnanandhaa continues to captivate both critics and fans alike with his exceptional talent and promising future in the world of chess.",
+            "thumbnail": "https://i.imgur.com/2HOfQ9g.jpg",
+            "tags": ["Sports"],
+            "isTrending": false,
+            "date": "Aug 24, 2023",
+            "images": {},
+            "meta": {
+              "description": "Discover the incredible achievement of Pragg, the youngest World Cup finalist and champion in history. At just 18 years old, Pragg made history by reaching the finals and winning the World Cup. Learn more about this talented player who was seeded number 31 and left a lasting impact on the world of sports.",
+              "keywords": "chess tournament, chess championship, international chess tournament, chess competition, chess event, chess grandmaster, chess player, chess strategy, chess tactics, world chess championship, chess world cup winner, chess runner up, chess title, indian chess players,FIDE World Cup, Magnus Carlsen, R Praggnanandhaa, Praggnanandhaa vs Carlsen Highlights"
+            }
+          },
+        {
+            "title": "Nifty and Bank Nifty Predictions: August 26th Market Insights",
+            "id": 7,
+            "intro": "Welcome to our Monday Market Predictions for the session on August 26th, 2023. As we analyze the data and trends for the week ahead. Now, let's dive into what the data suggests for the upcoming Monday session",
+            "paragraph": [
+                {
+                    "content": "<strong>Retailers Show Confidence:</strong><br>On the last trading day of the week, retailers made a bold move. They not only engaged in significant call buying and increased their put writing. Their actions suggest that the market might move upwards from its current support zone."
+                },
+                {
+                    "content": "<strong>FIIs Paint a Different Picture:</strong><br>Contrastingly, the Foreign Institutional Investors (FIIs) seem to be adopting a bearish stance, both in equity and options markets. Net FIIs data is indicating an increasing bearish sentiment. Their strategy involved substantial call writing and put buying, implying an expectation of a market downturn."
+                },
+                {
+                    "content": "<strong>NIFTY :</strong><br>Now, let's delve into the specifics. For NIFTY, the current Put-Call Ratio (PCR) stands at 0.66. A closer look at the option chain reveals substantial call writing at 19,300 and 19,400. This suggests that 19,400 could serve as a robust resistance level in the upcoming Monday session. Furthermore, there has been a decrease in put positions, indicating a lack of confidence in an upside move."
+                },
+                {
+                    "images": {
+                        "path": "https://i.imgur.com/P6QOArj.png",
+                        "title": "Nifty Important Levels"
+                    }
+                },
+                {
+                    "content": "<strong>BANK NIFTY:</strong><br>Shifting our focus to BANK NIFTY, we find a similar scenario with a current PCR of 0.79. Key levels to watch are 44,300 and 44,400, where significant call writing has occurred. Consequently, 44,500, a rounded-off level, could emerge as a formidable resistance point. People are not feeling very confident about the market going up because they're closing out their put positions."
+                },
+                {
+                    "images": {
+                        "path": "https://i.imgur.com/M7D34tv.png",
+                        "title": "Bank Nifty Important Levels"
+                    }
+                }
+                ],
+            "conclusion": "Retail investors are feeling positive, while big institutions are cautious. The options market suggests that some levels might act as resistance, and people aren't too sure about a big upward move. <br> Please be aware that investing in the stock market, including Nifty and Bank Nifty, comes with risks. The predictions we share here are for informational purposes and should not be considered financial advice. Invest wisely and at your own risk.",
+            "thumbnail": "https://i.imgur.com/9J1FX4o.jpg",
+            "tags": ["Share Market", "Predictions"],
+            "date": "Aug 26, 2023",
+            "images": {},
+            "meta": {
+                "description": "Explore Nifty and Bank Nifty predictions for the Monday session on August 26th, 2023. Get insights into potential market moves and trends.",
+                "keywords": "Nifty predictions, Bank Nifty forecast, Monday session analysis, August 26th market insights, stock market trends, investment risks, financial advice, market forecasts, trading strategies, risk assessment, stock market analysis, predictions for the week ahead, Nifty and Bank Nifty trends, market volatility, investment guidance, Share Market, Share Market Quick Blogs, Nifty Bank Nifty Predictions"
+              }
         }
     ]
 }

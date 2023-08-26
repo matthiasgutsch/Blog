@@ -9,6 +9,14 @@
             </p>
             <ng-container *ngFor="let data of blog?.paragraph; let i = index">
                 <p [innerHTML]="data?.content"></p>
+
+                <ng-container *ngIf="data?.images">
+                    <div class="mb-8 text-center">
+                        <img [src]="data?.images?.path" [alt]="data?.images?.title" class="mx-auto">
+                        <small>{{data?.images?.title}}</small>
+                    </div>
+                </ng-container>
+
                 <ng-container *ngIf="blog?.paragraph.length > 2 && i == 2 && blog?.images.path">
                     <div class="mb-8 text-center">
                         <img [src]="blog?.images?.path" [alt]="blog?.images?.title" class="mx-auto">
