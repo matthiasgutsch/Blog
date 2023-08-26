@@ -1,6 +1,7 @@
 import { isPlatformBrowser } from '@angular/common';
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { OwlOptions, SlidesOutputData } from 'ngx-owl-carousel-o';
+import { BlogPost } from 'src/app/shared/interfaces/blog-post.interface';
 import { DataSharingService } from 'src/app/shared/service/data-sharing.service';
 import { MetaTagsService } from 'src/app/shared/service/meta-tags.service';
 
@@ -12,6 +13,7 @@ import { MetaTagsService } from 'src/app/shared/service/meta-tags.service';
 export class HomeComponent {
   private isBrowser: boolean = false;
   blogs = []
+  trendingBlogs: BlogPost[] = []
   addAnimation = true;
 
   customOptions: OwlOptions = {
@@ -51,7 +53,8 @@ export class HomeComponent {
     }
     this.metaService.updateMetaTags(metaObject, 'https://quickblogs.vercel.app/assets/images/logo.png');
     this.dataSharingService.getBlogs().subscribe(blogs => {
-      this.blogs = blogs;
+      this.blogs = blogs.reverse();
+      this.trendingBlogs = this.blogs.filter(x => x.isTrending == true);
     })
   }
 

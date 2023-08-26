@@ -8,6 +8,7 @@ export interface BlogPost {
     tags?: string[],
     images?: { path: string, title: string}
     thumbnail: string,
+    isTrending?: boolean
     meta: {
         title?: string
         description?: string

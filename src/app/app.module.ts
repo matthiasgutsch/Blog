@@ -25,6 +25,7 @@ import { LogoComponent } from './shared/components/logo/logo.component';
 import { HomeComponent } from './pages/home/home.component'
 import { DropdownComponent } from './shared/components/dropdown/dropdown.component';
 import { BlogListComponent } from './pages/blog-list/blog-list.component';
+import { NoDataFoundComponent } from './shared/components/no-data-found/no-data-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +46,8 @@ import { BlogListComponent } from './pages/blog-list/blog-list.component';
     LogoComponent,
     HomeComponent,
     DropdownComponent,
-    BlogListComponent
+    BlogListComponent,
+    NoDataFoundComponent
   ],
   imports: [
     BrowserModule,
