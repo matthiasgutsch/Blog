@@ -1,4 +1,6 @@
-<div class="custom-container mt-12">
+<div class="custom-container mb-12">
+    <h1 class="section-title">{{blogType | titlecase}} Blogs</h1>
+
     <!-- post-list-section -->
     <ng-container>
         <div class="flex gap-8 flex-wrap">
@@ -7,5 +9,9 @@
             </div>
         </div>
         <app-load-more-btn *ngIf="blogs.length >= 10"></app-load-more-btn>
+    </ng-container>
+
+    <ng-container *ngIf="!blogs.length">
+        <app-no-data-found></app-no-data-found>
     </ng-container>
 </div>

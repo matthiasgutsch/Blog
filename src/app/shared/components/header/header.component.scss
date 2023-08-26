@@ -65,4 +65,9 @@ header {
     @apply absolute z-10;
     top: 36px;
     left: -6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+    @media screen and (max-width: 600px) {
+        left: -100%;
+    }
 }

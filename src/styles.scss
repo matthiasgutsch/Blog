@@ -23,9 +23,8 @@
 }
 
 html {
-    font-size: 62.5%;
-
     font-size: 62.5%; // 1rem = 10 px; 10px/16px = 62.5%
+    scroll-behavior: smooth;
   
     @media screen and (max-width: 1200px) { // width < 1200?
       font-size: 56.25%; // 1 rem = 9px; 9/16 = 56.25%

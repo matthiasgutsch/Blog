@@ -6,18 +6,18 @@
             </div>
             <ul class="navbar-list">
                 <li class="navbar-list-item"><a [routerLink]="['/']">Home</a></li>
-                <li class="navbar-list-item"><a [routerLink]="['/']">Blog</a></li>
-                <!-- <li class="navbar-list-item">
-                    <a (click)="openOptions()" id="dropdown-open">Blog <i class="fa-solid fa-angle-down"></i></a>
+                <!-- <li class="navbar-list-item"><a [routerLink]="['/']">Blog</a></li> -->
+                <li class="navbar-list-item" (click)="openOptions()">
+                    <a id="dropdown-open">Blog <i class="fa-solid fa-angle-down"></i></a>
                     <app-dropdown id="dropdown" *ngIf="displayDropdown" [options]="blog_types" (emitSelectedValue)="selectedType($event)"></app-dropdown>
-                </li> -->
+                </li>
                 <li class="navbar-list-item"><a [routerLink]="['about-me']">About Me</a></li>
                 <li class="navbar-list-item"><a [routerLink]="['contact-us']">Contact Us</a></li>
             </ul>
             <div class="navbar-social">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fas fa-search"></i>
+                <a routerLink="/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/quick_blogs"><i class="fab fa-twitter"></i></a>
+                <a routerLink="/"><i class="fas fa-search"></i></a>
             </div>
         </div>
     </div>
