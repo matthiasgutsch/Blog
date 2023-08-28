@@ -14,4 +14,8 @@ export class BlogCardSmComponent {
     return `https://picsum.photos/500`
   }
 
+  convertNameIntoLink(title: string): string {
+    return title.toLowerCase().replace(/[:,"' ]+/g, '-')
+  }
+
 }
