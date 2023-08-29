@@ -1,2 +1,3 @@
 User-agent: *   
 Allow: /
+sitemap: https://quickblogs.vercel.app/sitemap.xml
