@@ -30,7 +30,8 @@
               "src/assets",
               "src/google2e3ddc6a2a23b78a.html",
               "src/robots.txt",
-              "src/sitemap.xml"
+              "src/sitemap.xml",
+              "src/Ads.txt"
             ],
             "styles": [
               "src/styles.scss"
