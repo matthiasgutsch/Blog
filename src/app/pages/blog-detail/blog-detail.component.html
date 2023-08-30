@@ -6,7 +6,7 @@
         <div class="description">
             <p [innerHTML]="blog?.intro"></p>
             <ng-container *ngFor="let data of blog?.paragraph; let i = index">
-                <p [innerHTML]="data?.content"></p>
+                <p [innerHTML]="data?.content" class="description-p"></p>
 
                 <ng-container *ngIf="data?.images">
                     <div class="mb-8 text-center">
@@ -23,7 +23,7 @@
                 </ng-container>
             </ng-container>
 
-            <h3 class="mb-4" style="color: var(--black); font-weight: 600;" *ngIf="blog?.conclusion">Conclusion: </h3>
+            <h3 class="mb-4 description-p" *ngIf="blog?.conclusion">Conclusion: </h3>
             <p>
                 {{blog?.conclusion}}
             </p>

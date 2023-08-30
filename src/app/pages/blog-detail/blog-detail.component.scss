@@ -46,6 +46,11 @@
     }
 }
 
+::ng-deep .description-p strong, h3 {
+    font-size: 2rem !important;
+    color: var(--black) !important;
+    font-weight: 600 !important;
+}
 
 .reply {
     @apply pt-20;

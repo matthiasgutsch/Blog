@@ -103,3 +103,19 @@ input, textarea {
         opacity: 0;
     }
 }
+
+//scroll-bar css
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--light-grey); 
+    border-radius: 8px;
+  }

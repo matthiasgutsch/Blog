@@ -3,6 +3,10 @@
     min-width: 250px;
     transition: all 2s ease;
     color: #000;
+    max-height: 270px;
+    overflow-y: auto;
+
+    
 
     p {
         @apply p-6;
