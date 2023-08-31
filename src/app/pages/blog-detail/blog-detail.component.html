@@ -24,9 +24,7 @@
             </ng-container>
 
             <h3 class="mb-4 description-p" *ngIf="blog?.conclusion">Conclusion: </h3>
-            <p>
-                {{blog?.conclusion}}
-            </p>
+            <p  [innerHTML]="blog?.conclusion"></p>
 
             <div class="tags mb-20 mt-16">
                 <ng-container *ngFor="let tag of blog?.tags">
