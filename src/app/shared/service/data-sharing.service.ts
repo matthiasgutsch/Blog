@@ -1,6 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { BehaviorSubject, Observable, Subject, catchError, filter, map, throwError } from 'rxjs';
+import { BlogPost } from '../interfaces/blog-post.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +13,7 @@ export class DataSharingService {
   path = `https://keval101.github.io/blog-json/db.json`
 
   changedSlides$ = new Subject();
+  blogs: BlogPost[] = [];
   
   constructor(
     private http: HttpClient,
