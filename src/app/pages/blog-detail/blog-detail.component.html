@@ -36,6 +36,15 @@
             </div>
         </div>
 
+
+        <ng-container *ngIf="relatedPost.length">
+            <h1 class="section-title">Related Post</h1>
+            <div class="flex gap-8 flex-wrap">
+                <div *ngFor="let blog of relatedPost">
+                    <app-blog-card [post]="blog"></app-blog-card>
+                </div>
+            </div>
+        </ng-container>
         <!-- <div class="reply">
             <div class="reply-card">
                 <div class="reply-author">
