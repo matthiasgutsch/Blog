@@ -1,0 +1,14 @@
+.skeleton {
+    &__content {
+        @apply px-24 py-44;
+        background-color: #f8f7f3;
+
+        @media screen and (max-width: 768px) {
+            @apply px-16 py-24 flex-grow;
+        }
+
+        @media screen and (max-width: 600px) {
+            @apply px-12 py-16;
+        }
+    }
+}

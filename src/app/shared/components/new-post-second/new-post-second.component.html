@@ -1,7 +1,7 @@
 <article>
     <div class="article">
         <div class="article-image">
-            <img [src]="post?.thumbnail" [alt]="post?.title">
+            <img [src]="post?.thumbnail" [alt]="post?.title" loading="lazy">
         </div>
         <div class="article-content">
             <div class="article-date date">{{post?.tags}} - {{post?.date}}</div>
@@ -10,7 +10,7 @@
             </h3>
             <p class="article-description text-clamp">{{post?.intro}}</p>
             <div class="article-btn">
-                <a [routerLink]="['blog', post?.id]">
+                <a [routerLink]="['blog', post?.id]" [attr.aria-label]="setAreaLabel(post?.title)">
                     Read More <i class="fas fa-long-arrow-alt-right ml-1"></i>
                 </a> 
             </div>

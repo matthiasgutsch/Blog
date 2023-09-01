@@ -1,13 +1,13 @@
 <article class="blog">
     <div class="blog-image">
-        <img [src]="post?.thumbnail" [alt]="post?.title">
+        <img [src]="post?.thumbnail" [alt]="post?.title" width="322" height="258">
     </div>
 
     <div class="blog-date date">{{post?.tags}} - {{post?.date}}</div>
 
-    <h5 class="blog-title">
+    <h1 class="blog-title">
         <a [routerLink]="['/blog', post?.id, convertNameIntoLink(post?.title)]">{{post?.title}}</a>
-    </h5>
+    </h1>
 
     <p class="blog-description">{{post?.intro}}</p>
 </article>

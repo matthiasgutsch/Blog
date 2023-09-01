@@ -14,7 +14,8 @@ export class HomeComponent {
   private isBrowser: boolean = false;
   blogs = []
   trendingBlogs: BlogPost[] = []
-  addAnimation = true;
+  isLoading = true;
+  totalSkeleton = [1,2,3,4,5,6,7,8,9,10];
 
   customOptions: OwlOptions = {
     loop: true,
@@ -55,6 +56,7 @@ export class HomeComponent {
     this.dataSharingService.getBlogs().subscribe(blogs => {
       this.blogs = blogs.reverse();
       this.trendingBlogs = this.blogs.filter(x => x.isTrending == true);
+      this.isLoading = false;
     })
   }
 

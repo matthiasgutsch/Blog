@@ -26,6 +26,8 @@ import { HomeComponent } from './pages/home/home.component'
 import { DropdownComponent } from './shared/components/dropdown/dropdown.component';
 import { BlogListComponent } from './pages/blog-list/blog-list.component';
 import { NoDataFoundComponent } from './shared/components/no-data-found/no-data-found.component';
+import { BlogCardSkeletonComponent } from './shared/components/blog-card-skeleton/blog-card-skeleton.component';
+import { NewPostSecondSkeletonComponent } from './shared/components/new-post-second-skeleton/new-post-second-skeleton.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +49,9 @@ import { NoDataFoundComponent } from './shared/components/no-data-found/no-data-
     HomeComponent,
     DropdownComponent,
     BlogListComponent,
-    NoDataFoundComponent
+    NoDataFoundComponent,
+    BlogCardSkeletonComponent,
+    NewPostSecondSkeletonComponent
   ],
   imports: [
     BrowserModule,

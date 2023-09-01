@@ -9,4 +9,7 @@ import { BlogPost } from '../../interfaces/blog-post.interface';
 export class NewPostSecondComponent {
   @Input() post: BlogPost;
 
+  setAreaLabel(title: string) {
+    return `Read more about ${title}`
+  }
 }
