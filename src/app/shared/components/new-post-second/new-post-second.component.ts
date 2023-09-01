@@ -9,4 +9,8 @@ import { BlogPost } from '../../interfaces/blog-post.interface';
 export class NewPostSecondComponent {
   @Input() post: BlogPost;
 
+  
+  convertNameIntoLink(title: string): string {
+    return title.toLowerCase().replace(/[:,"' ]+/g, '-')
+  }
 }

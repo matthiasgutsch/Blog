@@ -52,6 +52,15 @@
     font-weight: 600 !important;
 }
 
+::ng-deep .description-p a {
+    color: rgb(85, 85, 247);
+    transition: all 0.2s ease;
+    &:hover {
+        color: rgb(50, 50, 235);
+        transition: all 0.2s ease;
+    }
+}
+
 .reply {
     @apply pt-20;
     border-top: 1px solid#ededed;

@@ -10,7 +10,7 @@
             </h3>
             <p class="article-description text-clamp">{{post?.intro}}</p>
             <div class="article-btn">
-                <a [routerLink]="['blog', post?.id]">
+                <a [routerLink]="['blog', post?.id, convertNameIntoLink(post?.title)]">
                     Read More <i class="fas fa-long-arrow-alt-right ml-1"></i>
                 </a> 
             </div>
