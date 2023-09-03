@@ -26,9 +26,7 @@ export class MetaTagsService {
 
   createCanonicalLink(url?: string) {
       let canURL = url == undefined ? this.dom.URL : url;
-      this.pageUrl = canURL;
-      this.pageUrl.replace('http', 'https')
-      console.log(this.pageUrl)
+      this.pageUrl = canURL.replace('http', 'https');
       let link: HTMLLinkElement = this.dom.createElement('link');
       link.setAttribute('rel', 'canonical');
       this.dom.head.appendChild(link);
@@ -59,13 +57,13 @@ export class MetaTagsService {
   }
 
   updateStructuredData(blog: BlogPost) {
-    this.createCanonicalLink();
+    let canURL = this.dom.URL;
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": this.pageUrl
+        "@id": canURL.replace('http', 'https')
       },
       "headline": blog.title,
       "description": blog.meta.description,

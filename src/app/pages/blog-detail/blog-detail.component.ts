@@ -28,18 +28,18 @@ export class BlogDetailComponent {
     this.route.params.subscribe(params => {   
       this.dataService.getBlogDetail(params['id']).subscribe(blog => {
         this.blog = blog;
-        this.metaService.updateStructuredData(this.blog)
-
+        
         this.dataService.getBlogByTypes(this.blog.tags.join(',').toLowerCase()).subscribe(blogs => {
           this.relatedPost = blogs.filter(x => x.id != this.blog.id)
         })
-
+        
         const meta = {
           title: this.blog?.meta?.title ?? this.blog?.title,
           description: this.blog?.meta?.description ?? this.blog?.intro,
           keywords: this.blog?.meta?.keywords ??  '',
         }
         this.metaService.updateMetaTags(meta, this.blog?.thumbnail)
+        this.metaService.updateStructuredData(this.blog)
       })
     })
     }
