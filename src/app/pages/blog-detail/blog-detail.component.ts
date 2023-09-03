@@ -28,10 +28,10 @@ export class BlogDetailComponent {
     this.route.params.subscribe(params => {   
       this.dataService.getBlogDetail(params['id']).subscribe(blog => {
         this.blog = blog;
+        this.metaService.updateStructuredData(this.blog)
 
         this.dataService.getBlogByTypes(this.blog.tags.join(',').toLowerCase()).subscribe(blogs => {
           this.relatedPost = blogs.filter(x => x.id != this.blog.id)
-          console.log(this.relatedPost)
         })
 
         const meta = {
