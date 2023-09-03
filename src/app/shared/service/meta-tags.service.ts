@@ -27,6 +27,8 @@ export class MetaTagsService {
   createCanonicalLink(url?: string) {
       let canURL = url == undefined ? this.dom.URL : url;
       this.pageUrl = canURL;
+      this.pageUrl.replace('http', 'https')
+      console.log(this.pageUrl)
       let link: HTMLLinkElement = this.dom.createElement('link');
       link.setAttribute('rel', 'canonical');
       this.dom.head.appendChild(link);
