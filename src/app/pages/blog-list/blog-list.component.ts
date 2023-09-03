@@ -25,7 +25,7 @@ export class BlogListComponent {
         this.title.setTitle(`${this.capitalizeFirstLetter(this.blogType)} Blogs`)
         const type = params['type']
         this.dataSharingService.getBlogByTypes(type.toLowerCase()).subscribe(blogs => {
-          this.blogs = blogs
+          this.blogs = blogs.reverse();
         })
       }
     })

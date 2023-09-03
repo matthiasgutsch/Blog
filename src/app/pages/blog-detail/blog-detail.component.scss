@@ -46,6 +46,11 @@
     }
 }
 
+::ng-deep .description span {
+    display: block;
+    margin: 16px 0;
+}
+
 ::ng-deep .description-p strong, h3 {
     font-size: 2rem !important;
     color: var(--black) !important;
@@ -59,6 +64,11 @@
         color: rgb(50, 50, 235);
         transition: all 0.2s ease;
     }
+}
+
+::ng-deep .description-p span {
+    display: block;
+    margin: 16px 0;
 }
 
 .reply {
