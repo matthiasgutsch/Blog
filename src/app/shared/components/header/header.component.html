@@ -11,8 +11,9 @@
                     <a id="dropdown-open">Blog <i class="fa-solid fa-angle-down"></i></a>
                     <app-dropdown id="dropdown" *ngIf="displayDropdown" [options]="blog_types" (emitSelectedValue)="selectedType($event)"></app-dropdown>
                 </li>
-                <li class="navbar-list-item"><a [routerLink]="['about-me']">About Me</a></li>
+                <li class="navbar-list-item"><a [routerLink]="['about-us']">About Us</a></li>
                 <li class="navbar-list-item"><a [routerLink]="['contact-us']">Contact Us</a></li>
+                <li class="navbar-list-item"><a [routerLink]="['privacy-policy']">Privacy Policy</a></li>
             </ul>
             <div class="navbar-social">
                 <a routerLink="/"><i class="fab fa-instagram"></i></a>

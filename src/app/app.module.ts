@@ -26,6 +26,7 @@ import { HomeComponent } from './pages/home/home.component'
 import { DropdownComponent } from './shared/components/dropdown/dropdown.component';
 import { BlogListComponent } from './pages/blog-list/blog-list.component';
 import { NoDataFoundComponent } from './shared/components/no-data-found/no-data-found.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +48,8 @@ import { NoDataFoundComponent } from './shared/components/no-data-found/no-data-
     HomeComponent,
     DropdownComponent,
     BlogListComponent,
-    NoDataFoundComponent
+    NoDataFoundComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,

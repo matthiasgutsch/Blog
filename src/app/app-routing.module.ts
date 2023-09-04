@@ -5,6 +5,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BlogListComponent } from './pages/blog-list/blog-list.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 
 const routes: Routes = [
   {
@@ -28,8 +29,12 @@ const routes: Routes = [
     component: ContactComponent
   },
   {
-    path: 'about-me',
+    path: 'about-us',
     component: AboutMeComponent
+  },
+  {
+    path: 'privacy-policy',
+    component: PrivacyPolicyComponent
   }
 ];
 
