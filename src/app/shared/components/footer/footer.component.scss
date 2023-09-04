@@ -16,11 +16,10 @@
 
     &-logo {
         @apply font-semibold;
-        font-size: 5rem;
         color: var(--black);
 
         app-logo div {
-            width: 150px
+            width: 170px !important;
         }
 
         @media screen and (max-width: 500px) {
@@ -39,22 +38,25 @@
                 font-size: 2.4rem;
             }
         }
-        ul {
-            li { 
-                @media screen and (max-width: 500px) {
-                    font-size: 1.8rem;
-                }
-                &:not(:last-child) {
-                    @apply mb-3;
-                }
+    }
+}
 
-                &.footer-links-social  {
-                    @media screen and (max-width: 500px) {
-                        @apply mt-6;
-                    }
-                }
+.list-link {
+    font-size: 1.8rem !important;
+    font-weight: normal !important;
+    li { 
+        @media screen and (max-width: 500px) {
+            font-size: 1.8rem !important;
+        }
+        &:not(:last-child) {
+            @apply mb-3;
+        }
 
+        &.footer-links-social  {
+            @media screen and (max-width: 500px) {
+                @apply mt-6;
             }
         }
+
     }
 }

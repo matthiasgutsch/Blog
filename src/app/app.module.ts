@@ -28,6 +28,7 @@ import { BlogListComponent } from './pages/blog-list/blog-list.component';
 import { NoDataFoundComponent } from './shared/components/no-data-found/no-data-found.component';
 import { BlogCardSkeletonComponent } from './shared/components/blog-card-skeleton/blog-card-skeleton.component';
 import { NewPostSecondSkeletonComponent } from './shared/components/new-post-second-skeleton/new-post-second-skeleton.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +52,8 @@ import { NewPostSecondSkeletonComponent } from './shared/components/new-post-sec
     BlogListComponent,
     NoDataFoundComponent,
     BlogCardSkeletonComponent,
-    NewPostSecondSkeletonComponent
+    NewPostSecondSkeletonComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,

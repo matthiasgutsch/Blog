@@ -20,6 +20,11 @@
             padding-top: 2.4rem;
             margin: 0 6rem;
         }
+
+        @media screen and (max-width: 600px) {
+            padding-top: 2.4rem;
+            margin: 0 2rem;
+        }
     }
 }
 
@@ -46,10 +51,29 @@
     }
 }
 
+::ng-deep .description span {
+    display: block;
+    margin: 16px 0;
+}
+
 ::ng-deep .description-p strong, h3 {
     font-size: 2rem !important;
     color: var(--black) !important;
     font-weight: 600 !important;
+}
+
+::ng-deep .description-p a {
+    color: rgb(85, 85, 247);
+    transition: all 0.2s ease;
+    &:hover {
+        color: rgb(50, 50, 235);
+        transition: all 0.2s ease;
+    }
+}
+
+::ng-deep .description-p span {
+    display: block;
+    margin: 16px 0;
 }
 
 .reply {

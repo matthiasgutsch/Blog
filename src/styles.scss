@@ -51,7 +51,8 @@ body {
 .custom-container {
     @apply w-full p-4 mx-auto;
 
-    @media screen and (min-width: 576px){
+    @media screen and (max-width: 600px){
+        @apply py-12 px-8;
         max-width: 540px;
     }
     @media screen and (min-width: 768px){
@@ -152,3 +153,12 @@ input, textarea {
     background: var(--light-grey); 
     border-radius: 8px;
   }
+
+  .custom-links {
+    color: rgb(85, 85, 247);
+    transition: all 0.2s ease;
+    &:hover {
+        color: rgb(50, 50, 235);
+        transition: all 0.2s ease;
+    }
+}

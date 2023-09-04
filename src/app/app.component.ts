@@ -24,7 +24,6 @@ export class AppComponent {
       this.renderer.listen(window, 'scroll', ($event) => {
         this.scroll = window.scrollY;
         if(window.scrollY > 0){
-          console.log(window.scrollY)
           this.isScrollDown = true;
         } else {
           this.isScrollDown = false;
