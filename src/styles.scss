@@ -51,7 +51,8 @@ body {
 .custom-container {
     @apply w-full p-4 mx-auto;
 
-    @media screen and (min-width: 576px){
+    @media screen and (max-width: 600px){
+        @apply py-12 px-8;
         max-width: 540px;
     }
     @media screen and (min-width: 768px){

@@ -20,6 +20,11 @@
             padding-top: 2.4rem;
             margin: 0 6rem;
         }
+
+        @media screen and (max-width: 600px) {
+            padding-top: 2.4rem;
+            margin: 0 2rem;
+        }
     }
 }
 
