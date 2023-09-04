@@ -12,14 +12,17 @@ import { MetaTagsService } from 'src/app/shared/service/meta-tags.service';
 })
 export class HomeComponent {
   private isBrowser: boolean = false;
-  blogs = []
+  blogs: BlogPost[] = []
+  totalData: BlogPost[] = []
   trendingBlogs: BlogPost[] = []
   isLoading = true;
   totalSkeleton = [1,2,3,4,5,6,7,8,9,10];
 
   customOptions: OwlOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
     center: true,
     dots: false,
     nav: true,
@@ -55,13 +58,23 @@ export class HomeComponent {
     this.metaService.updateMetaTags(metaObject, 'https://quickblogs.vercel.app/assets/images/logo.png');
     this.dataSharingService.getBlogs().subscribe(blogs => {
       this.blogs = blogs.reverse();
+      this.totalData = [...blogs];
+      this.blogs.length = 9
       this.dataSharingService.blogs = this.blogs
-      this.trendingBlogs = this.blogs.filter(x => x.isTrending == true);
+      this.trendingBlogs = this.totalData.filter(x => x.isTrending == true);
       this.isLoading = false;
     })
   }
 
   getPassedData(data: SlidesOutputData) {
     this.dataSharingService.changedSlides$.next(true)
+  }
+
+  loadMoreBlogs(): void {
+    if(this.blogs.length != this.totalData.length) {
+      const data = this.totalData.slice(9, this.blogs.length + 9);
+      this.blogs = [...this.blogs, ...data];
+      console.log(data, this.totalData, this.blogs)
+    }
   }
 }

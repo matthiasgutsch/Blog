@@ -8,7 +8,7 @@
                 <li class="navbar-list-item"><a [routerLink]="['/']">Home</a></li>
                 <!-- <li class="navbar-list-item"><a [routerLink]="['/']">Blog</a></li> -->
                 <li class="navbar-list-item" (click)="openOptions()">
-                    <a id="dropdown-open">Blog <i class="fa-solid fa-angle-down"></i></a>
+                    <span id="dropdown-open">Blog <i class="fa-solid fa-angle-down"></i></span>
                     <app-dropdown id="dropdown" *ngIf="displayDropdown" [options]="blog_types" (emitSelectedValue)="selectedType($event)"></app-dropdown>
                 </li>
                 <li class="navbar-list-item"><a [routerLink]="['about-us']">About Us</a></li>
