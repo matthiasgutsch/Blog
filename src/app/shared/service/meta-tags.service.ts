@@ -27,10 +27,15 @@ export class MetaTagsService {
   createCanonicalLink(url?: string) {
       let canURL = url == undefined ? this.dom.URL : url;
       this.pageUrl = canURL.replace('http', 'https');
-      let link: HTMLLinkElement = this.dom.createElement('link');
-      link.setAttribute('rel', 'canonical');
-      this.dom.head.appendChild(link);
-      link.setAttribute('href', canURL);
+      const canonicalElement = this.dom.querySelector('link[rel="canonical"]');
+      if(canonicalElement) {
+        canonicalElement.href = this.pageUrl;
+      } else {
+        let link: HTMLLinkElement = this.dom.createElement('link');
+        link.setAttribute('rel', 'canonical');
+        this.dom.head.appendChild(link);
+        link.setAttribute('href', this.pageUrl);
+      }
   }
 
   updateMetaTags(meta: IMetaTags, image: string): void {
