@@ -11,7 +11,9 @@
                 <ng-container *ngIf="data?.images">
                     <div class="mb-8 text-center">
                         <img [src]="data?.images?.path" [alt]="data?.images?.title" class="mx-auto">
-                        <small>{{data?.images?.title}}</small>
+                        <small>{{data?.images?.title}}</small><br>
+                        <small *ngIf="data?.images?.source">Source: <a [href]="data?.images?.source" class="custom-links" 
+                            *ngIf="data?.images?.source">{{data?.images?.source}}</a></small>
                     </div>
                 </ng-container>
 
@@ -37,14 +39,6 @@
         </div>
 
 
-        <ng-container *ngIf="relatedPost.length">
-            <h1 class="section-title">Related Post</h1>
-            <div class="flex gap-8 flex-wrap">
-                <div *ngFor="let blog of relatedPost">
-                    <app-blog-card [post]="blog"></app-blog-card>
-                </div>
-            </div>
-        </ng-container>
         <!-- <div class="reply">
             <div class="reply-card">
                 <div class="reply-author">
@@ -80,4 +74,12 @@
         </div> -->
     </div>
 
+    <ng-container *ngIf="relatedPost.length">
+        <h1 class="section-title">Related Post</h1>
+        <div class="blog-cards">
+            <div *ngFor="let blog of relatedPost">
+                <app-blog-card [post]="blog"></app-blog-card>
+            </div>
+        </div>
+    </ng-container>
 </div>

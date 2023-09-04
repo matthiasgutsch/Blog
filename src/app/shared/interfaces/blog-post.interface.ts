@@ -2,7 +2,7 @@ export interface BlogPost {
     title: string,
     id: number,
     intro: string,
-    paragraph: {content: string, images?: { path: string, title: string}}[],
+    paragraph: {content: string, images?: { path: string, title: string, source?: string}}[],
     conclusion: string,
     date?: string,
     tags?: string[],

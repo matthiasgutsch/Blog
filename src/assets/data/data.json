@@ -391,7 +391,8 @@
       {
         "images": {
           "path": "https://raw.githubusercontent.com/keval101/blog-json/main/Images/MwpXmUX - Imgur.webp",
-          "title": "Match Summary 2nd September: Al Hazem vs Al Nassr"
+          "title": "Match Summary 2nd September: Al Hazem vs Al Nassr",
+          "source": "https://www.flashscore.in/football/"
         }
       },
       {
@@ -480,7 +481,53 @@
             "description": "Baldur's Gate 3 gameplay revealed! Explore character creation, tactical combat, and the release date of this epic RPG adventure.",
             "keywords": "Baldur's Gate 3, BG3, RPG Adventure, Dungeons & Dragons, Larian Studios, Character Creation, Tactical Combat, Companions, Choices and Consequences, Release Date"
           }
-      }
+      },
+      {
+        "title": "Experience the Thrills of the 2023 US Open Tennis Championships",
+        "id": 14,
+        "intro": "The 2023 US Open Tennis Championships are just around the corner, promising an exhilarating display of skill and athleticism from the world's top tennis stars. Held at the iconic USTA Billie Jean King National Tennis Center in Flushing Meadows, New York, this prestigious tournament is a must-see event for tennis enthusiasts and sports fans alike. In this blog post, we will delve into the dates and location of the tournament, the exciting features of the official site, the availability of ticket packages, the participation of renowned players, and the once-in-a-lifetime opportunity to witness history being made on the grand stages of Arthur Ashe Stadium and Louis Armstrong Stadium.",
+        "paragraph": [
+          {
+            "content": "<strong>Dates and Location:</strong><br>The 2023 US Open Tennis Championships will take place from August 28 to September 10, 2023, marking two weeks of intense competition and electrifying matches. The tournament's home is the USTA Billie Jean King National Tennis Center, a world-class venue known for its state-of-the-art facilities and vibrant atmosphere. Located in Flushing Meadows, New York, this iconic stadium has witnessed some of the most unforgettable moments in tennis history."
+          },
+          {
+            "content": "<strong>The Stars:</strong><br>While the absence of Serena Williams may be a disappointment to some, the 2023 US Open Tennis Championships will still feature a galaxy of tennis superstars. Novak Djokovic, the reigning champion, will be defending his title and aiming to add another Grand Slam trophy to his illustrious career. Venus Williams, one of the sport's legends, will grace the courts once again, showcasing her timeless talent and fighting spirit. Caroline Wozniacki, a former world number one, will bring her fierce determination and formidable skills to the tournament, adding to the excitement and intensity of the competition."
+          },
+          {
+            "content": "<strong>Witness History on Grand Stages:</strong><br>Arthur Ashe Stadium and Louis Armstrong Stadium are the grand stages where history is made at the US Open. Arthur Ashe Stadium, the largest tennis stadium in the world, can hold over 23,000 spectators and provides an electrifying atmosphere that reverberates with the cheers and applause of passionate fans. Louis Armstrong Stadium, with a seating capacity of over 14,000, offers an intimate setting where you can witness the magic of tennis up close and personal. Whether you're seated in the upper tiers or right on the edge of the action, these iconic venues guarantee an unforgettable experience. Witness the electrifying moments as the world's top tennis stars compete for the prestigious title and record-breaking prize money of $65 million"
+          },
+          {
+            "images": {
+              "path": "https://raw.githubusercontent.com/keval101/blog-json/main/Images/01.webp",
+              "title": "Fixtures: ATP US Open 2023",
+              "source": "https://www.flashscore.in/tennis/"
+            }
+          },
+          {
+            "images": {
+              "path": "https://raw.githubusercontent.com/keval101/blog-json/main/Images/02.webp",
+              "title": "Fixtures: WTA US Open 2023",
+              "source": "https://www.flashscore.in/tennis/"
+            }
+          },
+          {
+            "content": "<strong>Official Site Features:</strong><br>To stay connected with all the action and excitement of the US Open, the official site is your go-to resource. The site offers a plethora of features designed to enhance your viewing experience. Live scoring allows you to track the progress of your favorite players in real-time, ensuring you don't miss a single point. Stay up to date with the latest news, interviews, and insights from the tournament through the comprehensive news section. Additionally, the site provides highlights of the most thrilling matches, allowing you to relive the magic long after the tournament concludes."
+          },
+          {
+            "content": "<strong>Ticket Packages:</strong><br>Attending the US Open is an experience like no other, and there are various ticket packages available to suit different preferences. Whether you're a casual observer or a die-hard fan, there's an option for everyone. From single session tickets to full-series packages, you can choose the package that best fits your schedule and budget. Keep in mind that ticket availability is limited, so it's advisable to secure your tickets in advance to avoid disappointment."
+          }
+          ],
+          "conclusion": "The 2023 US Open Tennis Championships promise to captivate and enthrall spectators from around the globe. With its world-class players, breathtaking matches, and record-breaking prize money, this tournament is a testament to the brilliance and allure of tennis. Don't miss the opportunity to be a part of sporting history at the USTA Billie Jean King National Tennis Center. Visit the official site to stay connected with the latest updates, secure your tickets, and plan your visit to this extraordinary event. Get ready to witness the power, grace, and passion of the world's top tennis stars as they battle it out for glory at the 2023 US Open.",
+            "thumbnail": "https://raw.githubusercontent.com/keval101/blog-json/main/Images/2023-US-Open.webp",
+          "tags": ["Sports"],
+          "date": "Sep 4, 2023",
+          "images": {},
+          "isTrending": true,
+          "meta": {
+              "description": "Stay updated on live scores, news, and highlights at the 2023 US Open Tennis Championships in NYC. Get tickets and plan your visit to witness top tennis stars in action.",
+              "keywords": "2023 US Open Tennis Championships, official site, live scoring, updates, news, highlights, tickets, USTA Billie Jean King National Tennis Center, New York City, tennis stars, thrilling event, tennis blog, US open update"
+            }
+        }
     ]
   }
   
