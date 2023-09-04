@@ -56,6 +56,10 @@
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;  
+
+        @media screen and (max-width: 600px) {
+            font-size: 14px;
+        }
     }
 
     &-title {
@@ -66,7 +70,8 @@
 
         @media screen and (max-width: 500px) {
             @apply mb-3;
-            font-size: 2rem;
+            font-size: 18px;
+            line-height: 1.4;
         }
 
         &:hover {

@@ -66,6 +66,10 @@
     &-description {
         line-height: 1.75;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 14px;
+        }
     }
 
     &-btn {

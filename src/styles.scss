@@ -44,6 +44,10 @@ body {
     font-size: 1.6rem;
     color: var(--grey);
     overflow-x: hidden;
+
+    @media screen and (max-width: 600px) {
+      
+    }
 }
 
 
