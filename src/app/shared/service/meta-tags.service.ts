@@ -40,6 +40,7 @@ export class MetaTagsService {
     this._meta.updateTag( { name: "description", content: meta.description }, "name='description'");
     this._meta.updateTag( { name: "keywords", content: meta.keywords }, "name='keywords'");
     this._meta.updateTag( { name: "image", content: image }, "name='image'");
+    this._meta.updateTag( { name: "robots", content: 'index, follow' }, "name='robots'");
 
     this._meta.updateTag( { property: 'og:type', content: 'website' }, "property='og:type'");
     this._meta.updateTag( { property: 'og:url', content: this.pageUrl }, "property='og:url'");
@@ -47,6 +48,10 @@ export class MetaTagsService {
     this._meta.updateTag( { property: 'og:description', content: meta.description }, "property='og:description'");
     this._meta.updateTag( { property: 'og:image:secure_url', content: image }, "property='og:image:secure_url'");
 
+    this._meta.updateTag( { name: "author", content: 'Quick Blog' }, "name='author'");
+    this._meta.updateTag( { name: "publisher", content: 'Keval Vadhiya' }, "name='publisher'");
+    this._meta.updateTag( { name: "copyright", content: 'Copyright © 2023 Quick Blogs' }, "name='copyright'");
+    this._meta.updateTag( { name: "language", content: 'English' }, "name='language'");
     
     this._meta.updateTag({ name: 'twitter:creator', content: `@KevalVadhiya`}, "name='twitter:creator'")
     this._meta.updateTag({ name: 'twitter:site', content: `@quick_blogs`}, "name='twitter:site'")
