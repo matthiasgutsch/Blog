@@ -41,6 +41,7 @@ export class MetaTagsService {
   updateMetaTags(meta: IMetaTags, image: string): void {
     this.title.setTitle(meta?.title);
     this.createCanonicalLink();
+    meta.keywords = meta.keywords.concat(', Personal Blogging, Blog Contents, Blogs, Finance, Social, Sports, Quick Blogs')
 
     this._meta.updateTag( { name: "description", content: meta.description }, "name='description'");
     this._meta.updateTag( { name: "keywords", content: meta.keywords }, "name='keywords'");
