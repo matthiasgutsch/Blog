@@ -21,8 +21,8 @@ export class HomeComponent {
   customOptions: OwlOptions = {
     loop: true,
     autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: false,
     center: true,
     dots: false,
     nav: true,
