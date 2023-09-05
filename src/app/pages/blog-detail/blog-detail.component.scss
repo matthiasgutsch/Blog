@@ -45,6 +45,9 @@
         line-height: 1.75;
         color: var(--grey);
 
+        @media screen and (max-width: 600px) {
+            font-size: 16px;
+        }
         &:last-child {
             @apply mb-20
         }
@@ -60,6 +63,11 @@
     font-size: 2rem !important;
     color: var(--black) !important;
     font-weight: 600 !important;
+
+    @media screen and (max-width: 600px) {
+        font-size: 20px !important;
+        line-height: normal;
+    }
 }
 
 ::ng-deep .description-p a {
@@ -141,5 +149,6 @@
 
     @media screen and (max-width: 420px) {
         grid-template-columns: repeat(1, 1fr);
+        gap: 2.5rem;
     }
 }

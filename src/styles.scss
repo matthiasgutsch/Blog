@@ -82,6 +82,10 @@ body {
     margin-bottom: 4px;
     font-size: 1.2rem;
     color: #454440;
+
+    @media screen and (max-width: 600px) {
+      font-size: 12.5px;    
+    }
 }
 
 .btn-primary {
