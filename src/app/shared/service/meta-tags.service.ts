@@ -26,7 +26,7 @@ export class MetaTagsService {
 
   createCanonicalLink(url?: string) {
       let canURL = url == undefined ? this.dom.URL : url;
-      this.pageUrl = canURL.replace('http', 'https');
+      this.pageUrl = canURL.replace('http', 'https').replace('httpss', 'https');
       const canonicalElement = this.dom.querySelector('link[rel="canonical"]');
       if(canonicalElement) {
         canonicalElement.href = this.pageUrl;
@@ -74,7 +74,7 @@ export class MetaTagsService {
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": canURL.replace('http', 'https')
+        "@id": canURL.replace('http', 'https').replace('httpss', 'https')
       },
       "headline": blog.title,
       "description": blog.meta.description,
