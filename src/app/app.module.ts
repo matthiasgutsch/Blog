@@ -29,6 +29,7 @@ import { NoDataFoundComponent } from './shared/components/no-data-found/no-data-
 import { BlogCardSkeletonComponent } from './shared/components/blog-card-skeleton/blog-card-skeleton.component';
 import { NewPostSecondSkeletonComponent } from './shared/components/new-post-second-skeleton/new-post-second-skeleton.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
+import { YoutubePlayerComponent } from './shared/components/youtube-player/youtube-player.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +54,8 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
     NoDataFoundComponent,
     BlogCardSkeletonComponent,
     NewPostSecondSkeletonComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    YoutubePlayerComponent
   ],
   imports: [
     BrowserModule,

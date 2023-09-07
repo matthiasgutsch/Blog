@@ -9,6 +9,7 @@ export interface BlogPost {
     images?: { path: string, title: string}
     thumbnail: string,
     isTrending?: boolean
+    youtube?: { link: string, title?: string}
     meta: {
         title?: string
         description?: string

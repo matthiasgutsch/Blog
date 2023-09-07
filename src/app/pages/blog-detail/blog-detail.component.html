@@ -1,4 +1,4 @@
-<div class="custom-container mb-12">
+<div class="custom-container mb-12" *ngIf="blog">
     <img [src]="blog?.thumbnail" alt="" class="blog-image">
     <div class="blog-wrapper">
         <div class="date">{{blog?.tags}} - {{blog?.date}}</div>
@@ -72,6 +72,8 @@
                 </div>
             </div>
         </div> -->
+
+        <app-youtube-player [videoLink]="videoLink" [title]="blog?.youtube?.title"></app-youtube-player>
     </div>
 
     <ng-container *ngIf="relatedPost.length">

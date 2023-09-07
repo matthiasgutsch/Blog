@@ -303,6 +303,10 @@
     "thumbnail": "https://i.postimg.cc/N01W9XNS/5g-PGib-V-Imgur.webp",
     "tags": ["Entertainment"],
     "date": "Aug 30, 2023",
+    "youtube": {
+      "link": "https://www.youtube.com/embed/COv52Qyctws?si=_pVKSnz1vp78C17s",
+      "title": "Jawan | Official Hindi Trailer | Shah Rukh Khan | Atlee | Nayanthara | Vijay S | Deepika P | Anirudh"
+    },
     "images": {},
     "meta": {
         "description": "Get ready for the release of 'Jawan' starring Shah Rukh Khan - an action thriller with an emotional twist. Latest updates, reviews, and more!",
@@ -369,6 +373,10 @@
     "tags": ["Entertainment"],
     "date": "Sep 1, 2023",
     "images": {},
+    "youtube": {
+      "link": "https://www.youtube.com/embed/l6kp780S-os?si=UuVcVZboiTveE2u_",
+      "title": "ONE PIECE | Final Trailer | Netflix"
+    },
     "meta": {
         "description": "Explore Netflix's live-action 'One Piece' adaptation: blending faithful storytelling with creative changes. Reviewing plot variations, fan service, and overall impact.",
         "keywords": "Netflix One Piece adaptation, Live-action One Piece review, Creative variation in One Piece series, Plot changes in One Piece live-action, Fan service in One Piece Netflix, Matt Owens showrunner, Visual effects in live-action One Piece, Action scenes in One Piece adaptation, Endearing cast of One Piece series, Emotional depth in One Piece live-action"
@@ -567,7 +575,45 @@
                 "description": "Free Fire India's relaunch with data safety, MS Dhoni as brand ambassador, and Yotta partnership promises to boost gaming and protect user data. #FreeFireIndia",
                 "keywords": "Garena Free Fire, Garena Free Fire returns to india, Garena Free Fire India, Garena Free Fire in India, Garena Free Fire back in India, Garena Free Fire download, free fire India download, free fire India launch delay, garena free fire india launch delayed, Free Fire India, relaunch, data safety, user experience, Yotta, unique content, MS Dhoni, positive impact, gaming sector"
               }
-          }
+          },
+          {
+            "title": "The Nun 2: The Devil's Daughter",
+            "id": 16,
+            "intro": "The sequel to the 2018 horror film 'The Nun', 'The Nun 2: The Devil's Daughter' is set years after the events of the first film. The story follows a young woman who is possessed by the demon Valak, and the priest and novitiate who must stop her before she can unleash hell on Earth.",
+            "paragraph": [
+              {
+                "content": "<strong>Outline:</strong><br>The film opens with a young woman named Sister Irene (Taissa Farmiga) being sent to a remote abbey in Romania to investigate the mysterious death of a nun. Upon arrival, she meets Father Burke (Jonas Bloquet), a skeptical priest who has been tasked with helping her. Together, they discover that the abbey is haunted by the demon Valak, who is determined to possess Sister Irene.<span></span>The two must race against time to stop Valak before she can unleash her evil on the world. Along the way, they will face terrifying visions, demonic possessions, and other unspeakable horrors."
+              },
+              {
+                "content": "<strong>Background:</strong><br>The first film, 'The Nun', was a critical and commercial success, grossing over $365 million worldwide. The film was praised for its scares, atmosphere, and performances. The sequel is expected to build on the success of the first film, and is sure to be a must-see for horror fans."
+              },
+              {
+                "content": "<strong>Director and Writer:</strong><br>The film is directed by Michael Chaves, who also directed the first film. Chaves is a rising star in the horror genre, and his previous work includes the films 'The Curse of La Llorona' and 'Malignant'. The screenplay is written by Gary Dauberman, who also wrote the screenplays for 'Annabelle' and 'Annabelle Comes Home'. Dauberman is a veteran of the 'Conjuring' universe, and his work is sure to please fans of the franchise."
+              },
+              {
+                "content": "<strong>Cast:</strong><br>The film stars Taissa Farmiga as Sister Irene, Jonas Bloquet as Father Burke, and Bonnie Aarons as the demon Valak. Farmiga is a rising star in Hollywood, and her previous work includes the films 'The Conjuring' and 'American Horror Story'. Bloquet is a French actor who is best known for his role in the film 'Elle'. Aarons is a veteran actress who has appeared in films such as 'The Conjuring' and 'Insidious: Chapter 2'."
+              },
+              {
+                "content": "<strong>Scares:</strong><br>The first film was praised for its scares, and the sequel is expected to be even scarier. The film's trailer has already shown some of the scares that audiences can expect, including demonic possessions, possessed nuns, and other disturbing imagery. It is sure to be a must-see for horror fans."
+              },            {
+                "content": "<strong>Release Date:</strong><br>The film is scheduled to be released on September 15, 2023. This is a prime release date for a horror film, as it will be just in time for the Halloween season."
+              }
+              ],
+              "conclusion": "'The Nun 2: The Devil's Daughter' is sure to be a must-see for horror fans. The film has a strong cast and crew, and it is sure to be even scarier than the first film. If you are looking for a good scare, then be sure to check out this film when it is released in September.",
+              "thumbnail": "https://i.postimg.cc/6pq9TB81/maxresdefault.webp",
+              "tags": ["Entertainment"],
+              "youtube": {
+                "link": "https://www.youtube.com/embed/QF-oyCwaArU?si=hwJP1KSl6GPdXaGE",
+                "title": "THE NUN II | OFFICIAL TRAILER"
+              },
+              "date": "Sep 7, 2023",
+              "images": {},
+              "isTrending": true,
+              "meta": {
+                  "description": "Explore the spine-chilling world of 'The Nun 2' in our review. Unveiling the horrors, characters, and scares of this sequel, releasing on September 15, 2023.",
+                  "keywords": "The Nun 2, The Devil's Daughter, Horror movie, Sequel, Taissa Farmiga, Jonas Bloquet, Bonnie Aarons, Michael Chaves, September 15, 2023, Conjuring universe, Valak, Demonic possession, Haunted abbey, Terrifying scares, Must-see for horror fans"
+                }
+            }
     ]
   }
   
