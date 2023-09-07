@@ -30,6 +30,7 @@ import { BlogCardSkeletonComponent } from './shared/components/blog-card-skeleto
 import { NewPostSecondSkeletonComponent } from './shared/components/new-post-second-skeleton/new-post-second-skeleton.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { YoutubePlayerComponent } from './shared/components/youtube-player/youtube-player.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +56,8 @@ import { YoutubePlayerComponent } from './shared/components/youtube-player/youtu
     BlogCardSkeletonComponent,
     NewPostSecondSkeletonComponent,
     PrivacyPolicyComponent,
-    YoutubePlayerComponent
+    YoutubePlayerComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
