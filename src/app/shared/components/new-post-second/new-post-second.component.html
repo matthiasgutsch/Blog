@@ -1,13 +1,15 @@
 <article>
     <div class="article">
         <div class="article-image">
-            <img [src]="post?.thumbnail" [alt]="post?.title" loading="lazy">
+            <img [src]="post?.thumbnail" [alt]="'Image for ' + post?.title" loading="lazy" height="460" width="550">
         </div>
         <div class="article-content">
             <div class="article-date date">{{post?.tags}} - {{post?.date}}</div>
-            <h1 class="article-title">
-                <a [routerLink]="['blog', post?.id, convertNameIntoLink(post?.title)]"> {{post?.title}} </a>
-            </h1>
+            <a [routerLink]="['blog', post?.id, convertNameIntoLink(post?.title)]">
+                <h1 class="article-title">
+                    {{post?.title}}
+                </h1>
+            </a>
             <p class="article-description text-clamp">{{post?.intro}}</p>
             <div class="article-btn">
                 <a [routerLink]="['blog', post?.id, convertNameIntoLink(post?.title)]" 

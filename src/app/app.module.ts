@@ -12,7 +12,6 @@ import { BlogCardComponent } from './shared/components/blog-card/blog-card.compo
 import { BlogCardSmComponent } from './shared/components/blog-card-sm/blog-card-sm.component';
 import { NewPostComponent } from './shared/components/new-post/new-post.component';
 import { BlogDetailComponent } from './pages/blog-detail/blog-detail.component';
-import { SampleComponent } from './pages/sample/sample.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LoadMoreBtnComponent } from './shared/components/load-more-btn/load-more-btn.component';
 
@@ -42,7 +41,6 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     BlogCardSmComponent,
     NewPostComponent,
     BlogDetailComponent,
-    SampleComponent,
     ContactComponent,
     LoadMoreBtnComponent,
     NewPostSecondComponent,

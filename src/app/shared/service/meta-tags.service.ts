@@ -38,7 +38,7 @@ export class MetaTagsService {
       }
   }
 
-  updateMetaTags(meta: IMetaTags, image: string): void {
+  updateMetaTags(meta: IMetaTags, image?: string): void {
     this.title.setTitle(meta?.title);
     this.createCanonicalLink();
     meta.keywords = meta.keywords.concat(', Personal Blogging, Blog Contents, Blogs, Finance, Social, Sports, Quick Blogs')
@@ -47,7 +47,9 @@ export class MetaTagsService {
     this._meta.updateTag( { name: "keywords", content: meta.keywords }, "name='keywords'");
     this._meta.updateTag( { name: "image", content: image }, "name='image'");
     this._meta.updateTag( { name: "robots", content: 'index, follow' }, "name='robots'");
-
+    // <meta property=og:locale content=en_US />
+    this._meta.updateTag( { property: 'og:site_name', content: 'QuickBlogs' }, "property='og:site_name'");
+    this._meta.updateTag( { property: 'og:locale', content: 'en_US' }, "property='og:locale'");
     this._meta.updateTag( { property: 'og:type', content: 'website' }, "property='og:type'");
     this._meta.updateTag( { property: 'og:url', content: this.pageUrl }, "property='og:url'");
     this._meta.updateTag( { property: 'og:title', content: meta.title }, "property='og:title'");
