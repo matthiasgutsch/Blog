@@ -18,7 +18,7 @@ export class BlogCardComponent {
   }
 
   convertNameIntoLink(title: string): string {
-    return title.toLowerCase().replace(/[:,"' ]+/g, '-')
+    return title.toLowerCase().replace(/[:,."' ]+/g, '-')
   }
 
 }
