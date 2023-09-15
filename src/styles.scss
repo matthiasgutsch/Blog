@@ -175,3 +175,18 @@ input, textarea {
         transition: all 0.2s ease;
     }
 }
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+
+  @media screen and (max-width: 650px) {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 420px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2.5rem;
+  }
+}
