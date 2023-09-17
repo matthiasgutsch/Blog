@@ -34,6 +34,7 @@
         "isTrending": true,
         "images": {},
         "meta": {
+          "title": "BTS & K-Pop Dark Side: Slave Contracts Revealed",
           "description": "Uncover K-Pop's hidden truths - exploitative contracts and their impact on idols, revealing the dark side of this glitzy world",
           "keywords": "K-Pop slave contracts, Dark side of K-Pop, Exploitative contracts in K-Pop, K-Pop industry secrets, K-Pop idols' rights, South Korean entertainment industry, K-Pop exploitation, K-Pop legal issues, Unveiling K-Pop contracts, K-Pop scandals"
         }
@@ -61,8 +62,9 @@
         "tags": ["Social"],
         "date": "Jun 24, 2023",
         "images": {},
-        "isTrending": true,
+        "isTrending": false,
         "meta": {
+          "title": "Paparazzi: Unveiling Glamour's Hidden Realities",
           "description": "Explore the world of celebrity paparazzi, revealing the ethics, scandals, and privacy invasion in the glitzy realm of Hollywood and beyond.",
           "keywords": "Celebrity paparazzi, Paparazzi culture, Celebrity privacy invasion, Paparazzi photography, Scandals in Hollywood, Gossip journalism, Tabloid media, Intrusive media coverage, Celebrities and photographers, Ethics of paparazzi"
         }
@@ -89,6 +91,7 @@
         "date": "Jun 24, 2023",
         "images": {},
         "meta": {
+          "title": "Youth and Religious Places: A Challenging Dynamic",
           "description": "Explore the issue of youth-related vandalism in India's sacred sites and the urgent need to preserve our religious heritage while fostering religious tolerance.",
           "keywords": "Youth and religious places, Religious site vandalism, Preservation of sacred sites, Religious heritage in India, Temple desecration, Protecting holy places, Youth involvement in religious activities, Religious tolerance in India, Historical temple conservation, Cultural heritage vandalism"
         }
@@ -121,7 +124,8 @@
         "date": "Aug 10, 2023",
         "images": {},
         "meta": {
-          "description": "Explore the 30,000 crore Telgi Stamp Paper Scam, masterminded by Abdul Karim Telgi, its investigation, legal outcomes, and implications for fraud prevention in India.",
+          "title": "Telgi Stamp Paper Scam: Unmasking the 30,000 Crore Conspiracy",
+          "description": "Dive into the ₹30,000 crore Telgi Stamp Paper Scam - investigation, legal outcomes, and its impact on fraud prevention in India.",
           "keywords": "Telgi Stamp Paper Scam, Abdul Karim Telgi, Stamp paper fraud in India, Counterfeit stamp paper scandal, Telgi scam investigation, Judicial verdict on Telgi case, Financial fraud schemes, Indian financial scandals, Legal implications of stamp paper scam, Government anti-fraud measures"
         }
       },
@@ -149,13 +153,14 @@
         "conclusion": "The potential benefits are clear. India's continued commitment to lunar exploration not only advances scientific knowledge but also has far-reaching implications for technology, education, international collaboration, and national pride. If Chandrayaan-3 succeeds, it will undoubtedly be a giant leap forward in India's space exploration journey. Stay tuned for updates on this exciting mission!",
         "thumbnail": "https://i.postimg.cc/25m0tKw9/i-CXo8pd-Imgur.webp",
         "tags": ["Science"],
-        "isTrending": true,
+        "isTrending": false,
         "date": "Aug 23, 2023",
         "images": {
           "path": "https://i.postimg.cc/qBjHx8kd/0qs-MTp-C-Imgur.webp",
           "title": "Chandrayaan-3 Model"
         },
         "meta": {
+          "title": "Chandrayaan-3: India's Next Leap in Lunar Exploration",
           "description": "Explore Chandrayaan-3, India's lunar mission, and ISRO continues its remarkable journey in space exploration",
           "keywords": "Chandrayaan-3 mission, Indian lunar exploration, ISRO lunar missions, India's moon mission, Space exploration updates, Lunar rover technology, India's space achievements, Lunar landing missions, ISRO's lunar plans, Moon exploration advancements"
         }
@@ -197,6 +202,7 @@
         "date": "Aug 24, 2023",
         "images": {},
         "meta": {
+          "title": "R Praggnanandhaa: The 2023 Chess World Championship Hero",
           "description": "Meet Pragg, the youngest-ever World Cup champion at 18. Seeded 31st, his historic win is etched in sports history. Discover his incredible journey now!",
           "keywords": "chess tournament, chess championship, international chess tournament, chess competition, chess event, chess grandmaster, chess player, chess strategy, chess tactics, world chess championship, chess world cup winner, chess runner up, chess title, indian chess players,FIDE World Cup, Magnus Carlsen, R Praggnanandhaa, Praggnanandhaa vs Carlsen Highlights"
         }
@@ -237,6 +243,7 @@
         "date": "Aug 26, 2023",
         "images": {},
         "meta": {
+            "title": "Nifty and Bank Nifty Predictions: August 28th Market Insights",
             "description": "Explore Nifty and Bank Nifty predictions for the Monday session on August 28th, 2023. Get insights into potential market moves and trends.",
             "keywords": "Nifty predictions, Bank Nifty forecast, Monday session analysis, August 28th market insights, stock market trends, investment risks, financial advice, market forecasts, trading strategies, risk assessment, stock market analysis, predictions for the week ahead, Nifty and Bank Nifty trends, market volatility, investment guidance, Share Market, Share Market Quick Blogs, Nifty Bank Nifty Predictions"
           }
@@ -271,6 +278,7 @@
       "date": "Aug 28, 2023",
       "images": {},
       "meta": {
+          "title": "Neeraj Chopra: India's Javelin Throw Pride on the Rise",
           "description": "Olympic gold medalist Neeraj Chopra adds World Athletics Championship gold in Men's Javelin 2023. An inspiring journey from a small village to global success.",
           "keywords": "Neeraj Chopra, World Athletics Championship 2023, Javelin Gold Medal, India's Pride in Athletics, Neeraj Chopra's Journey, Indian Javelin Thrower, Inspirational Sports Story, Olympic Gold Medalist, Athletics Champion, Neeraj Chopra's Latest Win, Track and Field, Sports Achievements, International Athletics, Indian Sports Icon, Sporting Excellence, World Record Holder, Neeraj Chopra Biography, Athlete Profile, Training and Technique, Sports Motivation, Success Stories, Sportsmanship Values, Haryana's Sporting Pride, Competitive Spirit, Neeraj Chopra News, Athletics Records, Athletic Competitions, Fitness and Training, Indian Olympians, Victory and Glory"
         }
@@ -309,6 +317,7 @@
     },
     "images": {},
     "meta": {
+        "title": "Jawan: Shah Rukh Khan's Action Thriller Anticipation",
         "description": "Get ready for the release of 'Jawan' starring Shah Rukh Khan - an action thriller with an emotional twist. Latest updates, reviews, and more!",
         "keywords": "Jawan, Shah Rukh Khan, action thriller, Atlee, emotional journey, early reviews, cast and crew, global release, languages"
       }
@@ -340,6 +349,7 @@
   "date": "Aug 31, 2023",
   "images": {},
   "meta": {
+      "title": "Asia Cup Showdown: India vs Pakistan Cricket Clash",
       "description": "Get ready for the India vs. Pakistan Asia Cup clash! Explore their rivalry, stats, and unforgettable moments at the 16th Asia Cup 2023.",
       "keywords": "India vs. Pakistan Asia Cup rivalry, Asia Cup 2023 cricket match, India vs. Pakistan head-to-head record, Cricketing showdown at the 16th Asia Cup, India's Asia Cup history and statistics, Pakistan's performance in the Asia Cup, India vs. Pakistan 2022 Asia Cup match, Cricketing legends Rohit Sharma and Babar Azam, Exciting moments in Asia Cup history, Kandy stadium cricket matches"
     }
@@ -378,7 +388,8 @@
       "title": "ONE PIECE | Final Trailer | Netflix"
     },
     "meta": {
-        "description": "Explore Netflix's live-action 'One Piece' adaptation: blending faithful storytelling with creative changes. Reviewing plot variations, fan service, and overall impact.",
+        "title": "One Piece: Pirates, Dreams, and Epic Adventure",
+        "description": "Discover Netflix's 'One Piece' adaptation - faithful storytelling with creative twists. Explore plot changes, fan service, and its overall impact.",
         "keywords": "Netflix One Piece adaptation, Live-action One Piece review, Creative variation in One Piece series, Plot changes in One Piece live-action, Fan service in One Piece Netflix, Matt Owens showrunner, Visual effects in live-action One Piece, Action scenes in One Piece adaptation, Endearing cast of One Piece series, Emotional depth in One Piece live-action"
       }
   },
@@ -419,6 +430,7 @@
       "date": "Sep 3, 2023",
       "images": {},
       "meta": {
+          "title": "Cristiano Ronaldo's Impact: 850 Goals and More",
           "description": "Cristiano Ronaldo's move to Al-Nassr FC and 850 career goals - A game-changer in football history. Explore his incredible journey and impact.",
           "keywords": "Cristiano Ronaldo, Al-Nassr FC, 850 career goals, Football transfer, Sports news, Ronaldo's achievements, Soccer career milestones, Football superstar, Ronaldo's impact, Al-Nassr FC signing"
         }
@@ -486,6 +498,7 @@
         "date": "Sep 3, 2023",
         "images": {},
         "meta": {
+            "title": "Baldur's Gate 3: Epic RPG Adventure & Release Insight",
             "description": "Baldur's Gate 3 gameplay revealed! Explore character creation, tactical combat, and the release date of this epic RPG adventure.",
             "keywords": "Baldur's Gate 3, BG3, RPG Adventure, Dungeons & Dragons, Larian Studios, Character Creation, Tactical Combat, Companions, Choices and Consequences, Release Date"
           }
@@ -530,9 +543,10 @@
           "tags": ["Sports"],
           "date": "Sep 4, 2023",
           "images": {},
-          "isTrending": true,
+          "isTrending": false,
           "meta": {
-              "description": "Stay updated on live scores, news, and highlights at the 2023 US Open Tennis Championships in NYC. Get tickets and plan your visit to witness top tennis stars in action.",
+              "title": "2023 US Open Tennis Championships: Game, Set, Thrill",
+              "description": "Stay informed with live scores, news, and highlights at the 2023 US Open Tennis Championships in NYC. Get tickets and plan your visit to witness top tennis stars in action.",
               "keywords": "2023 US Open Tennis Championships, official site, live scoring, updates, news, highlights, tickets, USTA Billie Jean King National Tennis Center, New York City, tennis stars, thrilling event, tennis blog, US open update"
             }
         },
@@ -570,8 +584,9 @@
             "tags": ["Game"],
             "date": "Sep 5, 2023",
             "images": {},
-            "isTrending": true,
+            "isTrending": false,
             "meta": {
+                "title": "Free Fire Returns: With Enhanced Data Safety",
                 "description": "Free Fire India's relaunch with data safety, MS Dhoni as brand ambassador, and Yotta partnership promises to boost gaming and protect user data. #FreeFireIndia",
                 "keywords": "Garena Free Fire, Garena Free Fire returns to india, Garena Free Fire India, Garena Free Fire in India, Garena Free Fire back in India, Garena Free Fire download, free fire India download, free fire India launch delay, garena free fire india launch delayed, Free Fire India, relaunch, data safety, user experience, Yotta, unique content, MS Dhoni, positive impact, gaming sector"
               }
@@ -608,10 +623,11 @@
               },
               "date": "Sep 7, 2023",
               "images": {},
-              "isTrending": true,
+              "isTrending": false,
               "meta": {
+                  "title": "The Nun 2: Unveiling The Devil's Daughter Horror",
                   "description": "Explore the spine-chilling world of 'The Nun 2' in our review. Unveiling the horrors, characters, and scares of this sequel, releasing on September 15, 2023.",
-                  "keywords": "The Nun 2, The Devil's Daughter, Horror movie, Sequel, Taissa Farmiga, Jonas Bloquet, Bonnie Aarons, Michael Chaves, September 15, 2023, Conjuring universe, Valak, Demonic possession, Haunted abbey, Terrifying scares, Must-see for horror fans"
+                  "keywords": "The Nun 2, nun, nun 2, The Nun II movie, the nun 2 release date in india, the nun 2 full movie, The Devil's Daughter, Horror movie, Sequel, Taissa Farmiga, Jonas Bloquet, Bonnie Aarons, Michael Chaves, September 15, 2023, Conjuring universe, Valak, Demonic possession, Haunted abbey, Terrifying scares, Must-see for horror fans"
                 }
             },
             {
@@ -646,8 +662,9 @@
                 "tags": ["Sports"],
                 "date": "Sep 15, 2023",
                 "images": {},
-                "isTrending": true,
+                "isTrending": false,
                 "meta": {
+                    "title": "India vs. Bangladesh: Don't Miss This Thriller!",
                     "description": "Catch the thrilling India vs. Bangladesh Asia Cup match on Sep 15, 03:00 PM. Get ready for cricket excitement!",
                     "keywords": "India vs. Bangladesh Asia Cup, Cricket match Sep 15, Asia Cup 2023, India vs. Bangladesh live, Cricket rivalry, Match schedule, Cricket action, Sep 15 match time, Asia Cup clash, Cricket excitement"
                   }
@@ -678,9 +695,54 @@
                   "isTrending": true,
                   "meta": {
                       "title": "India vs. Sri Lanka: Clash of Titans!",
-                      "description": "Catch the thrilling India vs. Bangladesh Asia Cup match on Sep 15, 03:00 PM. Get ready for cricket excitement!",
+                      "description": "Explore the India vs. Sri Lanka clash at Asia Cup 2023: Key players, excitement, and action on the field. Don't miss it! #AsiaCup2023 #Cricket",
                       "keywords": "India vs. Sri Lanka, Asia Cup 2023, Cricket Rivalry, Match Predictions, Cricket Titans, Asia Cup History, Cricket Showdown, Tournament Predictions, Epic Cricket Clash, Cricket Blog"
                     }
-                }
+                },
+                {
+                  "title": "Narendra Modi's Birthday: Honoring India's Visionary Leader",
+                  "id": 19,
+                  "intro": "As the nation comes together to celebrate the 73rd birthday of Prime Minister Narendra Modi, it's not just a day of personal significance but also an opportunity to reflect upon the achievements and contributions of a leader who has left an indelible mark on the fabric of India's politics and development. Born on September 17, 1950, in Vadnagar, Gujarat, Narendra Modi has not only risen to become the Prime Minister but has also reshaped the trajectory of the nation in many ways.",
+                  "paragraph": [
+                    {
+                      "content": "<strong>The Journey of Narendra Modi:</strong><br>Narendra Modi's journey from a humble beginning in Vadnagar to the highest office in the land is nothing short of inspirational. He started his political career as a Rashtriya Swayamsevak Sangh (RSS) pracharak and later joined the Bharatiya Janata Party (BJP). His early years in politics saw him holding various positions within the party, including serving as the Chief Minister of Gujarat from 2001 to 2014."
+                    },
+                    {
+                      "content": "<strong>Economic Reforms and Growth:</strong><br> One of the key achievements of Prime Minister Modi has been his commitment to economic reforms. His government introduced several landmark policies, including the Goods and Services Tax (GST) and the 'Make in India' initiative, aimed at boosting domestic manufacturing. Under his leadership, India witnessed significant economic growth and improved ease of doing business."
+                    },
+                    {
+                      "content": "<strong>Swachh Bharat Abhiyan:</strong><br>Prime Minister Modi's Swachh Bharat Abhiyan, or Clean India Campaign, is a testament to his dedication to improving the cleanliness and sanitation of the country. The campaign, launched in 2014, has made substantial progress in building toilets, promoting cleanliness, and raising awareness about hygiene across India."
+                    },
+                    {
+                      "content": "<strong>Digital India:</strong><br>The Digital India initiative has brought technology to the forefront of governance. It has facilitated better access to government services, increased digital literacy, and promoted e-governance. The expansion of the JAM (Jan Dhan, Aadhaar, Mobile) trinity has enabled direct benefit transfers, reducing leakages and corruption."
+                    },
+                    {
+                      "content": "<strong>Jan Dhan Yojana:</strong><br>The Pradhan Mantri Jan Dhan Yojana aimed at financial inclusion, ensuring that every Indian had access to banking services. This initiative helped in reducing financial untouchability and increased access to formal financial institutions for millions."
+                    },
+                    {
+                      "content": "<strong>Foreign Policy:</strong><br>Under Prime Minister Modi's leadership, India's foreign policy underwent a significant transformation. He established strong ties with various nations, including the United States, Russia, and Israel, fostering strategic partnerships that have benefited India on multiple fronts."
+                    },
+                    {
+                      "content": "<strong>Aatmanirbhar Bharat:</strong><br>The Aatmanirbhar Bharat (Self-Reliant India) initiative was launched during the COVID-19 pandemic to boost domestic manufacturing and reduce dependency on imports. It aims to make India a global manufacturing hub and promote entrepreneurship and innovation."
+                    },
+                    {
+                      "content": "<strong>Infrastructure Development:</strong><br>The government's focus on infrastructure development, including the construction of highways, railways, and ports, has improved connectivity and spurred economic growth in various regions of the country."
+                    },
+                    {
+                      "content": "<strong>Healthcare Initiatives:</strong><br>The Ayushman Bharat scheme, often referred to as 'Modicare,' is one of the world's largest government-funded healthcare programs. It provides health insurance to millions of vulnerable families, ensuring access to quality healthcare."
+                    }
+                    ],
+                    "conclusion": "As Prime Minister Narendra Modi celebrates his 73rd birthday, it's essential to acknowledge his remarkable journey and the transformative impact he has had on India. His vision, dedication, and relentless efforts have led to significant strides in various sectors, contributing to the nation's progress. While there may be differing opinions and viewpoints, there's no denying that he has left an indelible mark on the nation's history. As India continues to evolve and face new challenges, Prime Minister Modi's leadership remains a prominent force guiding the nation towards a brighter future. Happy Birthday, Prime Minister Modi!",
+                    "thumbnail": "https://i.postimg.cc/4dWns60H/modianiimage1659424917930.webp",
+                    "tags": ["Politics"],
+                    "date": "Sep 17, 2023",
+                    "images": {},
+                    "isTrending": true,
+                    "meta": {
+                        "title": "Celebrating PM Modi: India's Visionary Leader's Birthday",
+                        "description": "Celebrate Prime Minister Narendra Modi's birthday and explore his remarkable contributions to India's progress and development.",
+                        "keywords": "Narendra Modi, Prime Minister of India, Modi's birthday, Visionary leader, India's development, Contributions to India, Modi's achievements, Governance in India, Economic reforms, Digital India, Make in India, Swachh Bharat Abhiyan, Jan Dhan Yojana, Ayushman Bharat, Aatmanirbhar Bharat, GST, Infrastructure development, Foreign policy, National security, Skill India, Start-up India, Clean energy, Healthcare initiatives, Education reforms, Women empowerment, Rural development, Smart cities, Space exploration, COVID-19 response, Vaccination drive, India's global image, International diplomacy, BJP leader, Political career, Leadership qualities, Economic growth, Swami Vivekananda, Sardar Patel, Mahatma Gandhi, Indian politics, Bharatiya Janata Party, Hindutva, Indian economy, Green initiatives, Skill development, Make India proud, Healthcare for all, Empowering youth, India's future, Inspirational leadership."
+                      }
+                  }
     ]
   }
