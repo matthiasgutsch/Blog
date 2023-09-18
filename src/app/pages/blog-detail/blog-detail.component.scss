@@ -70,6 +70,12 @@
     }
 }
 
+::ng-deep .description-p .list-title {
+    font-weight: 600;
+    color: var(--black);
+    display: inline-block;
+}
+
 ::ng-deep .description-p a {
     color: rgb(85, 85, 247);
     transition: all 0.2s ease;
