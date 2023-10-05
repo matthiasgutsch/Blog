@@ -3,11 +3,13 @@
         <img [src]="post?.thumbnail" [alt]="'Image for ' + post?.title" width="322" height="258">
     </div>
 
-    <div class="blog-date date">{{post?.tags}} - {{post?.date}}</div>
-
-    <a [routerLink]="['/blog', post?.id, convertNameIntoLink(post?.title)]">
-        <h1 class="blog-title"> {{post?.title}} </h1>
-    </a>
-
-    <p class="blog-description">{{post?.intro}}</p>
+    <div class="blog-content">
+        <div class="blog-date date">{{post?.tags}} - {{post?.date}}</div>
+    
+        <a [routerLink]="['/blog', post?.id, convertNameIntoLink(post?.title)]">
+            <h1 class="blog-title"> {{post?.title}} </h1>
+        </a>
+    
+        <p class="blog-description">{{post?.intro}}</p>
+    </div>
 </article>

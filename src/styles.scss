@@ -44,10 +44,6 @@ body {
     font-size: 1.6rem;
     color: var(--grey);
     overflow-x: hidden;
-
-    @media screen and (max-width: 600px) {
-      
-    }
 }
 
 
@@ -179,9 +175,9 @@ input, textarea {
 .blog-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.5rem;
+  grid-gap: 4rem 2.2rem;
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
   }
 

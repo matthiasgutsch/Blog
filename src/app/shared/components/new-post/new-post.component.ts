@@ -2,6 +2,7 @@ import { Component, Inject, Input, OnChanges, OnInit, PLATFORM_ID } from '@angul
 import { DataSharingService } from '../../service/data-sharing.service';
 import { debounceTime, map, take, takeLast, tap } from 'rxjs';
 import { isPlatformBrowser } from '@angular/common';
+import { BlogPost } from '../../interfaces/blog-post.interface';
 
 @Component({
   selector: 'app-new-post',
@@ -10,6 +11,7 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class NewPostComponent implements OnInit{
   @Input() initSlide = false;
+  @Input() post: BlogPost;
   isBrowser = false;
 
   constructor(
@@ -33,5 +35,13 @@ export class NewPostComponent implements OnInit{
         }, 200);
       }
     })
+  }
+
+  convertNameIntoLink(title: string): string {
+    return title.toLowerCase().replace(/[:.,"' ]+/g, '-')
+  }
+  
+  getReadMoreLink(title: string): string {
+    return title.split(':')[0]
   }
 }

@@ -1,21 +1,25 @@
 .blog {
-    max-width: unset;
+    overflow: hidden;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid rgba(50, 58, 69, 0.2);
+    color: #292929;
+    transition: all 0.2s ease;
+    background: #fff;
 
-    @media screen and (max-width: 1200px) {
-        max-width: 33rem;
+    &:hover {
+        box-shadow: 0 5px 20px rgba(229, 230, 232, 0.8);
+        transition: all 0.2s ease;
+
+        .blog-image {
+            cursor: pointer;
+            transition: all 0.2s ease;
+            transform: scale(1.03)
+        }
     }
 
-    @media screen and (max-width: 992px) {
-        max-width: 36rem;
-    }
-
-    @media screen and (max-width: 768px) {
-        max-width: 31rem;
-    }
-
-    @media screen and (max-width: 600px) {
-        max-width: none;
-        width: 100%;
+    &-content {
+        padding: 20px;
     }
 
     &-image {
@@ -23,6 +27,7 @@
         height: 25.8rem;
         object-fit: cover;
         overflow: hidden;
+        transition: all 0.2s ease;
 
         @media screen and (max-width: 600px) {
             width: 100%;
@@ -42,7 +47,7 @@
         }
     }
     &-date {
-        padding-top: 2.4rem;
+        color: #2160b5;
     }
 
     &-title,
@@ -65,13 +70,25 @@
     &-title {
         @apply font-semibold cursor-pointer;
         color: var(--black);
-        font-size: 1.8rem;
+        font-size: 2rem;
         transition: all 0.2s ease;
+        height: 90px;
+
+        @media screen and (max-width: 992px) {
+            font-size: 1.8rem;
+            height: 73px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.8rem;
+            height: 44px;
+        }
 
         @media screen and (max-width: 500px) {
             @apply mb-3;
             font-size: 18px;
             line-height: 1.4;
+            height: auto;
         }
 
         &:hover {

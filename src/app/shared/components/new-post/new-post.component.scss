@@ -81,3 +81,11 @@
 .post-animation {
     animation: fade 0.5s ease-in;
 }
+
+.text-clamp{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient: vertical;  
+}

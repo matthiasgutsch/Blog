@@ -5,6 +5,7 @@
         <ng-container *ngFor="let blog of trendingBlogs">
             <ng-template class="slide" carouselSlide>
                 <app-new-post-second [post]="blog"></app-new-post-second>
+                <!-- <app-new-post [post]="blog"></app-new-post> -->
             </ng-template>
         </ng-container>
   </owl-carousel-o>  
