@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { BlogListComponent } from './pages/blog-list/blog-list.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { AdminComponent } from './pages/admin/admin.component';
 
 const routes: Routes = [
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path: 'page-not-found',
     component: PageNotFoundComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent,
   },
   {
     path: '**',

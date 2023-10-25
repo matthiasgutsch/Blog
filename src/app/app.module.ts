@@ -30,6 +30,8 @@ import { NewPostSecondSkeletonComponent } from './shared/components/new-post-sec
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { YoutubePlayerComponent } from './shared/components/youtube-player/youtube-player.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { AdminComponent } from './pages/admin/admin.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,15 +57,17 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     NewPostSecondSkeletonComponent,
     PrivacyPolicyComponent,
     YoutubePlayerComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     CarouselModule,
-    HttpClientModule
-    
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

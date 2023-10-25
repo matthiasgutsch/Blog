@@ -186,3 +186,30 @@ input, textarea {
       gap: 2.5rem;
   }
 }
+
+// Form CSS
+.form {
+  @apply mt-12;
+  &-field {
+      @apply flex gap-5 mb-5;
+      input {
+          width: 50%;
+      }
+  }
+
+  button {
+      @apply cursor-pointer mt-4;
+      text-align: center;
+      border: 1px solid transparent;
+      font-size: 1.6rem;
+      padding: 0.7em 2.2em;
+      background: #ffd46d;
+      transition: all 0.2s ease;
+      color: var(--black);
+
+      &:hover {
+          @apply shadow-lg;
+          transition: all 0.2s ease;
+      }
+  }
+}
