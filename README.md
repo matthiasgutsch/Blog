@@ -1,27 +1,17 @@
 # Blog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+To Start the Project install angular cli
+npm install -g @angular/cli
 
-## Development server
+to run the project run following commands
+1. npm install 
+2. ng serve
+3. https://localhost:4200/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+or you can see live link
+https://quickblogs.vercel.app/
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![01](https://github.com/keval101/Blog/assets/62419921/1a751208-f37e-4681-9f9a-74973a781bfc)
+![02](https://github.com/keval101/Blog/assets/62419921/67f23bdc-3cf8-4d70-8042-1fe02c27c5cc)
+![03](https://github.com/keval101/Blog/assets/62419921/8205f64e-3773-41b3-8da3-d7a4b9afa74d)
+![04](https://github.com/keval101/Blog/assets/62419921/4042d823-3cd1-4bcf-a8e8-e50669ea4107)
