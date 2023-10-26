@@ -42,10 +42,10 @@ const routes: Routes = [
     path: 'page-not-found',
     component: PageNotFoundComponent
   },
-  {
-    path: 'admin',
-    component: AdminComponent,
-  },
+  // {
+  //   path: 'admin',
+  //   component: AdminComponent,
+  // },
   {
     path: '**',
     redirectTo: 'page-not-found',
