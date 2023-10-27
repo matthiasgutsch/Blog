@@ -55,6 +55,7 @@ export class MetaTagsService {
     this._meta.updateTag( { property: 'og:title', content: meta.title }, "property='og:title'");
     this._meta.updateTag( { property: 'og:description', content: meta.description }, "property='og:description'");
     this._meta.updateTag( { property: 'og:image:secure_url', content: image }, "property='og:image:secure_url'");
+    this._meta.updateTag( { property: 'og:image', content: image }, "property='og:image'");
 
     this._meta.updateTag( { name: "author", content: 'Quick Blog' }, "name='author'");
     this._meta.updateTag( { name: "publisher", content: 'Keval Vadhiya' }, "name='publisher'");
