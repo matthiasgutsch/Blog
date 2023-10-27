@@ -1,5 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { DataSharingService } from 'src/app/shared/service/data-sharing.service';
 
 @Component({
   selector: 'app-admin',
@@ -8,10 +9,10 @@ import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
   encapsulation: ViewEncapsulation.None
 })
 export class AdminComponent {
-  nbaForm: FormGroup;
+  blogForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
-    this.nbaForm = this.fb.group({
+  constructor(private fb: FormBuilder, private dataService: DataSharingService) {
+    this.blogForm = this.fb.group({
       title: ['', Validators.required],
       id: [0, Validators.required],
       intro: '',
@@ -30,19 +31,18 @@ export class AdminComponent {
   }
 
   get paragraphControls() {
-    return (this.nbaForm.get('paragraph') as FormArray).controls;
+    return (this.blogForm.get('paragraph') as FormArray).controls;
   }
 
   get tagsControls() {
-    return (this.nbaForm.get('tags') as FormArray).controls;
+    return (this.blogForm.get('tags') as FormArray).controls;
   }
 
   submit(): void {
-    console.log(this.nbaForm.value, this.nbaForm)
-
-    const value = this.nbaForm.value;
+    console.log(this.blogForm.value, this.blogForm)
+    const value = this.blogForm.value;
     let paravalue;
-    this.nbaForm.value.paragraph.map(x => {
+    this.blogForm.value.paragraph.map(x => {
       if(x.content) {
         const para_title = x.content.para_title ? `<strong>${x.content.para_title}</strong><br>` : '';
         const para_text = x.content.para_text ? `<p>${x.content.para_text.replace(/\n/g, '<span></span>')}</p>` : '';
@@ -53,17 +53,17 @@ export class AdminComponent {
   }
 
   removeParagraph(index: number) {
-    const paragraphArray = this.nbaForm.get('paragraph') as FormArray;
+    const paragraphArray = this.blogForm.get('paragraph') as FormArray;
     paragraphArray.removeAt(index);
   }
 
   addParagraph() {
-    const paragraphArray = this.nbaForm.get('paragraph') as FormArray;
+    const paragraphArray = this.blogForm.get('paragraph') as FormArray;
     paragraphArray.push(this.newParagraph()); // Add an empty paragraph field
   }
 
   addParagraphImage() {
-    const paragraphArray = this.nbaForm.get('paragraph') as FormArray;
+    const paragraphArray = this.blogForm.get('paragraph') as FormArray;
     paragraphArray.push(this.newParagraphImage()); // Add an empty paragraph field
   }
 

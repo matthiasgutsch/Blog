@@ -3,6 +3,7 @@
         @apply flex justify-center items-center w-full;
 
         .form {
+            border-color: var(--primary);
             width: 800px;
         }
     }
