@@ -15,6 +15,8 @@ export class HomeComponent {
   blogs: BlogPost[] = []
   totalData: BlogPost[] = []
   trendingBlogs: BlogPost[] = []
+  sportsBlogs: BlogPost[] = []
+  entertainmentBlogs: BlogPost[] = []
   isLoading = true;
   totalSkeleton = [1,2,3,4,5,6,7,8,9,10];
 
@@ -63,6 +65,13 @@ export class HomeComponent {
       this.blogs.length = 9
       this.dataSharingService.blogs = this.blogs
       this.trendingBlogs = this.totalData.filter(x => x.isTrending == true);
+      this.sportsBlogs = this.totalData.filter(x => x.tags.includes('Sports'));
+      this.entertainmentBlogs = this.totalData.filter(x => x.tags.includes('Entertainment'));
+
+      this.trendingBlogs.length = this.trendingBlogs.length > 6 ? 6 : this.trendingBlogs.length
+      this.sportsBlogs.length = this.sportsBlogs.length > 6 ? 6 : this.sportsBlogs.length
+      this.entertainmentBlogs.length = this.entertainmentBlogs.length > 6 ? 6 : this.entertainmentBlogs.length
+
       this.isLoading = false;
     })
   }

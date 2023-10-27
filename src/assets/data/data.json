@@ -932,7 +932,6 @@
         {
           "content": "<strong>Squads:</strong><br>Each NBA team is allowed to have a maximum of 17 players on its roster, including two two-way contracts. Two-way contracts allow players to spend up to 50 games with their NBA team and 50 games with their G League affiliate.<span></span>The following are some of the top squads in the NBA for the 2023-24 season:"
         },
-
         {
           "content": "<strong>Boston Celtics:</strong><br>The Celtics are one of the favorites to win the championship this season, with a young and talented core led by Jayson Tatum and Jaylen Brown. Tatum is one of the best scorers in the league, while Brown is a versatile two-way player. The Celtics also have a strong supporting cast, including Marcus Smart, Al Horford, and Robert Williams III."
         },
@@ -950,7 +949,8 @@
         },
         {
           "content": "<strong>Other contenders:</strong><br>Other teams that could challenge for the championship this season include the Philadelphia 76ers, Miami Heat, Denver Nuggets, and Memphis Grizzlies. The 76ers have a talented duo in Joel Embiid and James Harden, while the Heat have a deep and experienced roster. The Nuggets have one of the best young players in the league in Nikola Jokic, and the Grizzlies are a young and up-and-coming team."
-        },        {
+        },
+        {
           "content": "<strong>Key dates:</strong><br><span></span><p class='list-title'>● October 24:</p> Regular season begins<span></span><p class='list-title'>● November 22-27:</p> Group stage of In-Season Tournament<span></span><p class='list-title'>● December 9:</p> In-Season Tournament championship game<span></span><p class='list-title'>● April 14:</p> Regular season ends<span></span><p class='list-title'>● April 16-19:</p> Play-In Tournament<span></span><p class='list-title'>● April 20:</p> Playoffs begin<span></span><p class='list-title'>● June 12:</p> NBA Finals Game 7 (if necessary)"
         },
         {
@@ -982,39 +982,96 @@
       "id": 25,
       "intro": "Blockchain is a distributed ledger technology (DLT) that allows for secure, transparent, and tamper-proof transactions. It is a system of recording information in a way that makes it difficult or impossible to change, hack, or cheat the system.\nBlockchain works by creating a chain of blocks, each of which contains a number of transactions. Each block is linked to the previous block, forming a chain. This makes it very difficult to tamper with any of the data in a block, as this would require changing all of the subsequent blocks in the chain.",
       "paragraph": [
-          {
-              "content": "<strong>How does blockchain work?</strong><br><p>Blockchain is secured using cryptography. Cryptography is a method of scrambling data so that it can only be read by authorized individuals. In the context of blockchain, cryptography is used to secure the transactions and blocks in the chain.<span></span>When a new transaction is made on a blockchain network, it is first verified by the network participants. Once the transaction is verified, it is added to a new block. The new block is then added to the chain, and all of the network participants are updated with the new block.</p>"
-          },
-          {
-            "content": "<strong>Blockchain applications:</strong><br> Blockchain has a wide range of potential applications, including: <span></span><p class='list-title'>● Cryptocurrencies: </p>Blockchain is the underlying technology behind cryptocurrencies such as Bitcoin and Ethereum. Cryptocurrencies are digital or virtual tokens that use cryptography to secure their transactions and to control the creation of new units.<span></span><p class='list-title'>● Smart contracts: </p>Smart contracts are self-executing contracts that are stored on a blockchain network. Smart contracts can be used to automate a wide variety of transactions, such as financial agreements, supply chain management, and voting.<span></span><p class='list-title'>● Non-fungible tokens (NFTs): </p>NFTs are unique digital assets that are stored on a blockchain network. NFTs can be used to represent ownership of digital items such as artwork, music, and in-game items.<span></span><p class='list-title'>● Other applications: </p>Blockchain is also being used to develop a wide range of other applications, such as identity management, digital rights management, and fraud detection."
-          },
-          {
-            "content": "<strong>Blockchain benefits:</strong><br> Blockchain offers a number of benefits, including: <span></span><p class='list-title'>● Security: </p> Blockchain is very secure, thanks to its use of cryptography.<span></span><p class='list-title'>● Transparency: </p> Blockchain transactions are transparent and can be viewed by anyone on the network.<span></span><p class='list-title'>● Tamper-proof: </p> Blockchain transactions are tamper-proof, meaning that they cannot be changed without the consent of all of the network participants.<span></span><p class='list-title'>● Decentralization: </p> Blockchain networks are decentralized, meaning that they are not controlled by any single entity."
-          },
-          {
-              "content": "<strong>The future of blockchain</strong><br><p>Blockchain is a rapidly developing technology with the potential to revolutionize many industries. As blockchain technology continues to mature and adoption increases, we can expect to see even more innovative and groundbreaking applications of blockchain emerge in the years to come.</p>"
-          }
+        {
+          "content": "<strong>How does blockchain work?</strong><br><p>Blockchain is secured using cryptography. Cryptography is a method of scrambling data so that it can only be read by authorized individuals. In the context of blockchain, cryptography is used to secure the transactions and blocks in the chain.<span></span>When a new transaction is made on a blockchain network, it is first verified by the network participants. Once the transaction is verified, it is added to a new block. The new block is then added to the chain, and all of the network participants are updated with the new block.</p>"
+        },
+        {
+          "content": "<strong>Blockchain applications:</strong><br> Blockchain has a wide range of potential applications, including: <span></span><p class='list-title'>● Cryptocurrencies: </p>Blockchain is the underlying technology behind cryptocurrencies such as Bitcoin and Ethereum. Cryptocurrencies are digital or virtual tokens that use cryptography to secure their transactions and to control the creation of new units.<span></span><p class='list-title'>● Smart contracts: </p>Smart contracts are self-executing contracts that are stored on a blockchain network. Smart contracts can be used to automate a wide variety of transactions, such as financial agreements, supply chain management, and voting.<span></span><p class='list-title'>● Non-fungible tokens (NFTs): </p>NFTs are unique digital assets that are stored on a blockchain network. NFTs can be used to represent ownership of digital items such as artwork, music, and in-game items.<span></span><p class='list-title'>● Other applications: </p>Blockchain is also being used to develop a wide range of other applications, such as identity management, digital rights management, and fraud detection."
+        },
+        {
+          "content": "<strong>Blockchain benefits:</strong><br> Blockchain offers a number of benefits, including: <span></span><p class='list-title'>● Security: </p> Blockchain is very secure, thanks to its use of cryptography.<span></span><p class='list-title'>● Transparency: </p> Blockchain transactions are transparent and can be viewed by anyone on the network.<span></span><p class='list-title'>● Tamper-proof: </p> Blockchain transactions are tamper-proof, meaning that they cannot be changed without the consent of all of the network participants.<span></span><p class='list-title'>● Decentralization: </p> Blockchain networks are decentralized, meaning that they are not controlled by any single entity."
+        },
+        {
+          "content": "<strong>The future of blockchain</strong><br><p>Blockchain is a rapidly developing technology with the potential to revolutionize many industries. As blockchain technology continues to mature and adoption increases, we can expect to see even more innovative and groundbreaking applications of blockchain emerge in the years to come.</p>"
+        }
       ],
       "conclusion": "Blockchain is a revolutionary technology with the potential to transform many industries. It is a secure, transparent, and tamper-proof way to store and transact data. Blockchain is still in its early stages of development, but it is already being used to develop a wide range of applications, including cryptocurrencies, smart contracts, and non-fungible tokens (NFTs). As blockchain technology continues to develop and adoption increases, we can expect to see even more innovative and groundbreaking applications of blockchain emerge in the years to come.",
       "thumbnail": "https://i.postimg.cc/dQBkm66Y/block-chain.webp",
-      "tags": ["Financial"],
+      "tags": [
+        "Financial"
+      ],
       "date": "26 Oct 2023",
       "isTrending": true,
       "meta": {
-          "title": "Blockchain Guide for Beginners: Comprehensive Overview",
-          "description": "Blockchain is a revolutionary technology that has the potential to transform many industries. This blog post will provide you with a comprehensive guide to blockchain, including what it is, how it works, and its potential applications.",
-          "keywords": "blockchain, cryptocurrency, decentralized ledger, distributed ledger technology, smart contracts, non-fungible tokens (NFTs), blockchain applications, blockchain benefits, blockchain challenges, blockchain future"
+        "title": "Blockchain Guide for Beginners: Comprehensive Overview",
+        "description": "Blockchain is a revolutionary technology that has the potential to transform many industries. This blog post will provide you with a comprehensive guide to blockchain, including what it is, how it works, and its potential applications.",
+        "keywords": "blockchain, cryptocurrency, decentralized ledger, distributed ledger technology, smart contracts, non-fungible tokens (NFTs), blockchain applications, blockchain benefits, blockchain challenges, blockchain future"
       },
       "sources": [
         {
-            "link": "https://docplayer.net/202095197-Understanding-the-interrelativity-of-blockchain-and-data-protection-in-nigeria.html",
-            "title": "Understanding the Interrelationship of Blockchain and Data Protection in Nigeria"
+          "link": "https://docplayer.net/202095197-Understanding-the-interrelativity-of-blockchain-and-data-protection-in-nigeria.html",
+          "title": "Understanding the Interrelationship of Blockchain and Data Protection in Nigeria"
         },
         {
           "link": "https://indiacsr.in/why-trade-cryptocurrencies/",
           "title": "Why trade cryptocurrencies?"
         }
-    ]
-  }
+      ]
+    },
+    {
+      "title": "Alan Wake 2: Release date, gameplay, and everything we know so far",
+      "id": 26,
+      "intro": "Alan Wake 2 is a survival horror game developed by Remedy Entertainment and published by Epic Games. It is a sequel to the 2010 game Alan Wake, and is scheduled for release on October 27, 2023 for PlayStation 5, Xbox Series X/S, and Windows.",
+      "paragraph": [
+        {
+          "content": "<strong>Gameplay</strong><br><p>Alan Wake 2 is a single-player game where players control Alan Wake, a writer who is haunted by nightmares and his own dark past. The game is set in a dark and atmospheric world, and features a variety of gameplay mechanics, including exploration, puzzle-solving, and combat.<span></span>In the game, players will use Alan's flashlight to ward off the darkness and defeat enemies. They will also need to use their environment to their advantage, and solve puzzles to progress.</p>"
+        },
+        {
+          "images": {
+            "path": "https://i.postimg.cc/T3QzZFDx/01.webp",
+            "title": "Alan Wake 2: Gameplay"
+          }
+        },
+        {
+          "images": {
+            "path": "https://i.postimg.cc/ZRNDKMCC/02.webp",
+            "title": "Alan Wake 2: Gameplay"
+          }
+        },
+        {
+          "images": {
+            "path": "https://i.postimg.cc/Y0k8225s/03.webp",
+            "title": "Alan Wake 2: Gameplay"
+          }
+        },
+        {
+          "images": {
+            "path": "https://i.postimg.cc/8zFdSrFC/04.webp",
+            "title": "Alan Wake 2: Gameplay"
+          }
+        },
+        {
+          "content": "<strong>Release date</strong><br><p>Alan Wake 2 is scheduled for release on October 27, 2023 for PlayStation 5, Xbox Series X/S, and Windows.</p>"
+        },
+        {
+          "content": "<strong>Everything we know so far</strong><br><p>Alan Wake 2 was first announced in December 2021, and since then, Remedy Entertainment has released a few trailers and teasers that give us a glimpse of the game.<span></span>In the trailers, we see Alan Wake in a dark and atmospheric world, haunted by nightmares and his own dark past. We also see some of the enemies that he will face, including creatures made of darkness and the Nightmares, which are manifestations of Alan's fears.<span></span>Remedy Entertainment has said that Alan Wake 2 will be a more mature and suspenseful game than the original. They have also said that the game will have a more open world, and that it will be more focused on survival horror.</p>"
+        },
+        {
+          "content": "<strong>Speculation</strong><br><p>Based on the trailers and teasers that have been released so far, there are a few things that we can speculate about Alan Wake 2.<span></span>One thing that we can speculate about is the game's setting. In the trailers, we see Alan Wake in a variety of different environments, including forests, caves, and abandoned buildings. This suggests that the game will have a more open world than the original.<span></span>Another thing that we can speculate about is the game's enemies. In the trailers, we see a variety of different enemies, including creatures made of darkness and the Nightmares. This suggests that the game will have a more diverse range of enemies than the original.<span></span>Finally, we can speculate about the game's story. In the trailers, we see Alan Wake struggling to deal with his nightmares and his own dark past. This suggests that the game's story will be more mature and suspenseful than the original.</p>"
+        }
+      ],
+      "conclusion": "Overall, Alan Wake 2 is shaping up to be a promising sequel to the original game. Remedy Entertainment has said that they are aiming to make Alan Wake 2 a more mature and suspenseful game than the original, and the trailers and teasers that have been released so far suggest that they are on the right track.",
+      "thumbnail": "https://i.postimg.cc/ncftyN3j/thumnail-alan.webp",
+      "tags": [
+        "Game"
+      ],
+      "date": "27 Oct 2023",
+      "isTrending": true,
+      "meta": {
+        "title": "Alan Wake 2: Release Date, Gameplay, and All Updates",
+        "description": "Get ready for the spine-tingling sequel, Alan Wake 2, from Remedy Entertainment and Epic Games. Scheduled for release on October 27, 2023, for PlayStation 5, Xbox Series X/S, and Windows, this survival horror game continues the story of writer Alan Wake. Haunted by his nightmares and past, players must wield Alan's flashlight to combat darkness, conquer foes, and solve puzzles to advance in this thrilling adventure",
+        "keywords": "Alan Wake 2, Release date, Gameplay, Story, Enemies, Setting, Survival horror, Remedy Entertainment, Epic Games, PlayStation 5, Xbox Series X/S, Windows, Flashlight, Darkness, Nightmares, Puzzles, Mature, Suspenseful, Open world, Diverse, Sequel, October 27, 2023, Alan Wake 2 trailer, Alan Wake 2 gameplay video, Alan Wake 2 pre-order, Alan Wake 2 news, Alan Wake 2 reviews, Alan Wake 2 system requirements, Alan Wake 2 merchandise, Alan Wake 2 fan art, Alan Wake 2 cosplay, Alan Wake 2 walkthrough, Alan Wake 2 tips and tricks, Alan Wake 2 secrets, Alan Wake 2 Easter eggs."
+      }
+    }
   ]
 }

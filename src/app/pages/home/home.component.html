@@ -30,12 +30,32 @@
     <!-- post-list-by-tags -->
     <ng-container>
         <h1 class="section-title">Trending Blogs</h1>
-        <div class="flex gap-8 flex-wrap">
+        <div class="flex gap-8 mb-32 flex-wrap">
             <ng-container *ngFor="let blog of trendingBlogs">
                 <app-blog-card-sm [post]="blog"></app-blog-card-sm>
             </ng-container>
             <ng-container *ngIf="!trendingBlogs.length">
                 <app-no-data-found [title]="'Trending Blogs'"></app-no-data-found>
+            </ng-container>
+        </div>
+
+        <h1 class="section-title">Sports Blogs</h1>
+        <div class="flex gap-8 mb-32 flex-wrap">
+            <ng-container *ngFor="let blog of sportsBlogs">
+                <app-blog-card-sm [post]="blog"></app-blog-card-sm>
+            </ng-container>
+            <ng-container *ngIf="!sportsBlogs.length">
+                <app-no-data-found [title]="'Sports Blogs'"></app-no-data-found>
+            </ng-container>
+        </div>
+
+        <h1 class="section-title">Entertainment Blogs</h1>
+        <div class="flex gap-8 flex-wrap">
+            <ng-container *ngFor="let blog of entertainmentBlogs">
+                <app-blog-card-sm [post]="blog"></app-blog-card-sm>
+            </ng-container>
+            <ng-container *ngIf="!entertainmentBlogs.length">
+                <app-no-data-found [title]="'Entertainment Blogs'"></app-no-data-found>
             </ng-container>
         </div>
     </ng-container>
