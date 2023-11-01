@@ -44,7 +44,7 @@ export class AdminComponent {
     let paravalue;
     this.blogForm.value.paragraph.map(x => {
       if(x.content) {
-        const para_title = x.content.para_title ? `<strong>${x.content.para_title}</strong><br>` : '';
+        const para_title = x.content.para_title ? `<strong>${x.content.para_title}: </strong><br>` : '';
         const para_text = x.content.para_text ? `<p>${x.content.para_text.replace(/\n/g, '<span></span>')}</p>` : '';
         x.content = para_title + para_text
       }
@@ -70,8 +70,8 @@ export class AdminComponent {
   newParagraph(): FormGroup {
     return this.fb.group({
       content: this.fb.group({
-        para_title: 'd',
-        para_text: 'dd',
+        para_title: '',
+        para_text: '',
       })
     });
   }
@@ -79,8 +79,8 @@ export class AdminComponent {
   newParagraphImage(): FormGroup {
     return this.fb.group({
       images: this.fb.group({
-        path: 'image path',
-        title: 'image title',
+        path: '',
+        title: '',
       })
     });
   }
