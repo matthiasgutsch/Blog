@@ -32,6 +32,7 @@ import { YoutubePlayerComponent } from './shared/components/youtube-player/youtu
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MobileHeaderComponent } from './shared/components/mobile-header/mobile-header.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +59,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PrivacyPolicyComponent,
     YoutubePlayerComponent,
     PageNotFoundComponent,
-    AdminComponent
+    AdminComponent,
+    MobileHeaderComponent
   ],
   imports: [
     BrowserModule,
