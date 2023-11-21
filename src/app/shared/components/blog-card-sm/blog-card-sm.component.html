@@ -1,6 +1,6 @@
 <article class="flex gap-8 blog-sm">
     <div class="blog-sm-image">
-        <img [src]="post?.thumbnail" [alt]="'Image for ' + post?.title">
+        <img loading="lazy" [src]="post?.thumbnail" [alt]="'Image for ' + post?.title">
     </div>
     <div>
         <a [routerLink]="['/blog', post?.id, convertNameIntoLink(post?.title)]">
