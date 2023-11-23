@@ -38,6 +38,18 @@ export class MetaTagsService {
       }
   }
 
+  addedLCPImage(imageURL: string) {
+    let link: HTMLLinkElement = this.dom.createElement('link');
+
+    link.setAttribute('rel', 'preload');
+    link.setAttribute('fetchpriority', 'high');
+    link.setAttribute('as', 'image');
+    link.setAttribute('type', 'image/webp');
+    link.setAttribute('href', imageURL);
+    this.dom.head.appendChild(link);
+
+  }
+
   updateMetaTags(meta: IMetaTags, image?: string): void {
     this.title.setTitle(meta?.title);
     this.createCanonicalLink();
