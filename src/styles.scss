@@ -149,7 +149,7 @@ input, textarea {
 
 //scroll-bar css
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 8px;
   }
   
   /* Track */
@@ -161,6 +161,12 @@ input, textarea {
   ::-webkit-scrollbar-thumb {
     background: var(--light-grey); 
     border-radius: 8px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: var(--grey);
+      transition: all 0.2s ease;
+    }
   }
 
   .custom-links {
