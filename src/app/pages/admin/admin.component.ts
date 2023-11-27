@@ -39,7 +39,6 @@ export class AdminComponent {
   }
 
   submit(): void {
-    console.log(this.blogForm.value, this.blogForm)
     const value = this.blogForm.value;
     let paravalue;
     this.blogForm.value.paragraph.map(x => {
@@ -48,8 +47,8 @@ export class AdminComponent {
         const para_text = x.content.para_text ? `<p>${x.content.para_text.replace(/\n/g, '<span></span>')}</p>` : '';
         x.content = para_title + para_text
       }
-      console.log(x.content)
     })
+    console.log(this.blogForm.value)
   }
 
   removeParagraph(index: number) {
