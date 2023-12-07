@@ -53,7 +53,7 @@ export class AdminComponent {
     let paravalue;
     this.blogForm.value.paragraph.map(x => {
       if(x.content) {
-        const para_title = x.content.para_title ? `<strong>${x.content.para_title}: </strong><br>` : '';
+        const para_title = x.content.para_title ? `<h3>${x.content.para_title}: </h3>` : '';
         const para_text = x.content.para_text ? `<p>${x.content.para_text.replace(/\n/g, '<span></span>')}</p>` : '';
         x.content = para_title + para_text
       }
