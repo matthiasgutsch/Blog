@@ -33,6 +33,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { AdminComponent } from './pages/admin/admin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MobileHeaderComponent } from './shared/components/mobile-header/mobile-header.component';
+import { DatePipe } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,7 +72,7 @@ import { MobileHeaderComponent } from './shared/components/mobile-header/mobile-
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -70,7 +70,8 @@
     margin: 16px 0;
 }
 
-::ng-deep .description-p strong, h3 {
+::ng-deep .description-p strong, 
+::ng-deep .description-p h3,h3 {
     font-size: 2rem !important;
     color: var(--black) !important;
     font-weight: 600 !important;

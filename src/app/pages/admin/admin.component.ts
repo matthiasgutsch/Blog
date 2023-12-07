@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DataSharingService } from 'src/app/shared/service/data-sharing.service';
@@ -11,7 +12,7 @@ import { DataSharingService } from 'src/app/shared/service/data-sharing.service'
 export class AdminComponent {
   blogForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private dataService: DataSharingService) {
+  constructor(private fb: FormBuilder, private dataService: DataSharingService, private datePipe: DatePipe) {
     this.blogForm = this.fb.group({
       title: ['', Validators.required],
       id: [0, Validators.required],
@@ -21,13 +22,22 @@ export class AdminComponent {
       thumbnail: '',
       tags: this.fb.array(['']), // You may need to handle the array of tags separately
       date: '',
-      isTrending: false, // Assuming isTrending is a boolean
+      isTrending: true, // Assuming isTrending is a boolean
       meta: this.fb.group({
         title: '',
         description: '',
         keywords: ''
       })
     });
+  }
+
+  ngOnInit() {
+    this.dataService.getBlogs().subscribe(res => {
+      const today = new Date();
+      const formattedDate = this.datePipe.transform(today, 'MMM d, yyyy');
+      this.blogForm.get('date').setValue(formattedDate);
+      this.blogForm.get('id').setValue(res.length + 1)
+    })
   }
 
   get paragraphControls() {
