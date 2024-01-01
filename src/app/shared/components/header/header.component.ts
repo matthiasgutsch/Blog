@@ -22,7 +22,7 @@ export class HeaderComponent {
   @HostListener('document:click', ['$event'])
   open(event: any) {
     if(this.displayDropdown && this.isBrowser) {
-      if(event.target.id != 'dropdown' && event.target.id != 'dropdown-open') {
+      if(event.target.id != 'dropdown' && event.target.id != 'dropdown-open' && event.target.id != 'dropdown-icon') {
         this.displayDropdown = false;
       }
     }
