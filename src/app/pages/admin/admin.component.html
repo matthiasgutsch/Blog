@@ -46,10 +46,23 @@
                             </svg>
                     </button>
                 </div>
+
+                <div formGroupName="list" class="blog-form__fields-group paragraph-group flex-col" *ngIf="paragraph.get('list')">
+                    <input type="text" formControlName="title" placeholder="List Title">
+                    <input type="text" formControlName="text" placeholder="List Text">
+                    <button type="button" (click)="removeParagraph(i)" class="btn btn-danger remove-btn">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                            </svg>
+                    </button>
+                </div>
             </div>
         </div>
         <button type="button" class="btn btn-primary" (click)="addParagraph()">Add Paragraph</button>
         <button type="button" class="btn btn-primary" (click)="addParagraphImage()">Add Paragraph Image</button>
+        <button type="button" class="btn btn-primary" (click)="addParagraphList()">Add Paragraph List</button>
 
 
         <div formArrayName="tags" class="blog-form__fields !p-0">

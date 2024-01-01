@@ -52,13 +52,33 @@ export class AdminComponent {
     const value = this.blogForm.value;
     let paravalue;
     this.blogForm.value.paragraph.map(x => {
+      console.log(x)
+      if(x.list) {
+        x.list.title =  `<p class='list-title'>● ${x.list.title}<p> ${x.list.text}`
+        x.list = `<div class='list-content'> ${x.list.title} </div><span></span>`
+      }
       if(x.content) {
         const para_title = x.content.para_title ? `<h3>${x.content.para_title}: </h3>` : '';
         const para_text = x.content.para_text ? `<p>${x.content.para_text.replace(/\n/g, '<span></span>')}</p>` : '';
         x.content = para_title + para_text
       }
     })
-    console.log(this.blogForm.value)
+    const mergedData = [];
+    let currentContent = "";
+    for (const item of this.blogForm.value.paragraph) {
+      if (item.content !== undefined) {
+        if (currentContent !== "") {
+          mergedData.push({ "content": currentContent });
+          currentContent = "";
+        }
+      } else if (item.list !== undefined) {
+        currentContent += `<div>${item.list}</div>`;
+      }
+    }
+    if (currentContent !== "") {
+      mergedData.push({ "content": currentContent });
+    }
+    console.log(this.blogForm.value, mergedData)
   }
 
   removeParagraph(index: number) {
@@ -76,6 +96,11 @@ export class AdminComponent {
     paragraphArray.push(this.newParagraphImage()); // Add an empty paragraph field
   }
 
+  addParagraphList() {
+    const paragraphArray = this.blogForm.get('paragraph') as FormArray;
+    paragraphArray.push(this.newParagraphList()); // Add an empty paragraph field
+  }
+
   newParagraph(): FormGroup {
     return this.fb.group({
       content: this.fb.group({
@@ -90,6 +115,15 @@ export class AdminComponent {
       images: this.fb.group({
         path: '',
         title: '',
+      })
+    });
+  }
+
+  newParagraphList(): FormGroup {
+    return this.fb.group({
+      list: this.fb.group({
+        title: '',
+        text: '',
       })
     });
   }
