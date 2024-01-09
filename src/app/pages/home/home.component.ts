@@ -66,16 +66,6 @@ export class HomeComponent {
     })
   }
 
-  getPassedData(data: SlidesOutputData) {
-    this.dataSharingService.changedSlides$.next(true)
-  }
 
-  loadMoreBlogs(): void {
-    if(this.blogs.length != this.totalData.length) {
-      this.page = this.page + 1;
-      const data = this.totalData.slice(9 * this.page, this.blogs.length + 9);
-      this.blogs = [...this.blogs, ...data];
-      console.log(data, this.totalData, this.blogs)
-    }
-  }
+
 }
