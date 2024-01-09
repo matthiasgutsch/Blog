@@ -20,7 +20,7 @@ export class DataSharingService {
     @Inject(PLATFORM_ID) private platformId: any) { }
 
   getBlogs():  Observable<any> {
-    return this.http.get(this.path);
+    return this.http.get(this.path).pipe(map((res: any) => res))
   }
 
   getBlogDetail(blogId: string | number): Observable<any> {
