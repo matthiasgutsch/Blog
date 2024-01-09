@@ -60,7 +60,7 @@ export class HomeComponent {
     }
     this.metaService.updateMetaTags(metaObject, 'https://quickblogs.vercel.app/assets/images/logo.png');
     this.dataSharingService.getBlogs().subscribe(pData => {
-      this.blogs = pData;
+      this.blogs = pData.reverse();
     
       this.isLoading = false;
     })
