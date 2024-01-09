@@ -10,7 +10,7 @@ export class DataSharingService {
 
 
   // path = '/assets/data/data.json'
-  path = `https://keval101.github.io/blog-json/db.json`;
+  path = `https://api.matthiasgutsch.com/products`;
 
   changedSlides$ = new Subject();
   blogs: BlogPost[] = [];
@@ -20,7 +20,7 @@ export class DataSharingService {
     @Inject(PLATFORM_ID) private platformId: any) { }
 
   getBlogs():  Observable<any> {
-    return this.http.get(this.path).pipe(map((res: any) => res?.blog))
+    return this.http.get(this.path);
   }
 
   getBlogDetail(blogId: string | number): Observable<any> {

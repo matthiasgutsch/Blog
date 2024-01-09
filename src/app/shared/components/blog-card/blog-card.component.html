@@ -1,15 +1,9 @@
 <article class="blog">
-    <div class="blog-image">
-        <img loading="lazy" [src]="post?.thumbnail" [alt]="'Image for ' + post?.title" width="322" height="258" [routerLink]="['/blog', post?.id, convertNameIntoLink(post?.title)]">
-    </div>
+
 
     <div class="blog-content">
-        <div class="blog-date date">{{post?.tags}} - {{post?.date}}</div>
+        <div class="blog-date date">{{post?.page_title}}</div>
     
-        <a [routerLink]="['/blog', post?.id, convertNameIntoLink(post?.title)]">
-            <h1 class="blog-title"> {{post?.title}} </h1>
-        </a>
-    
-        <p class="blog-description">{{post?.intro}}</p>
+     
     </div>
 </article>

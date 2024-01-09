@@ -8,6 +8,8 @@ export interface BlogPost {
     tags?: string[],
     images?: { path: string, title: string}
     thumbnail: string,
+    page_title: string;
+    page_url: string;
     isTrending?: boolean
     youtube?: { link: string, title?: string}
     meta: {

@@ -1,71 +1,16 @@
 
-<div class="custom-container">
-    <app-new-post-second-skeleton *ngIf="isLoading"></app-new-post-second-skeleton>
-    <owl-carousel-o [options]="customOptions" (change)="getPassedData($event)" *ngIf="!isLoading">
-        <ng-container *ngFor="let blog of trendingBlogs">
-            <ng-template class="slide" carouselSlide>
-                <app-new-post-second [post]="blog"></app-new-post-second>
-                <!-- <app-new-post [post]="blog"></app-new-post> -->
-            </ng-template>
-        </ng-container>
-  </owl-carousel-o>  
-</div>
 <div class="custom-container mt-12">
-    <!-- post-list-section -->
-    <ng-container>
-        <div class="blog-cards">
-            <ng-container *ngIf="isLoading">
-                <div *ngFor="let skeleton of totalSkeleton">
-                    <app-blog-card-skeleton></app-blog-card-skeleton>
-                </div>
-            </ng-container>
-
-            <ng-container *ngIf="!isLoading">
-                <div *ngFor="let blog of blogs">
-                    <app-blog-card [post]="blog"></app-blog-card>
-                </div>
-            </ng-container>
-        </div>
-        <app-load-more-btn *ngIf="blogs.length >= 9 && blogs.length != totalData.length" (emitLoadMore)="loadMoreBlogs()"></app-load-more-btn>
-    </ng-container>
 
     <!-- post-list-by-tags -->
     <ng-container>
         <h1 class="section-title">Trending Blogs</h1>
         <div class="flex gap-8 mb-32 flex-wrap">
-            <ng-container *ngFor="let blog of trendingBlogs">
+            <ng-container *ngFor="let blog of blogs">
                 <app-blog-card-sm [post]="blog"></app-blog-card-sm>
-            </ng-container>
-            <ng-container *ngIf="!trendingBlogs.length">
-                <app-no-data-found [title]="'Trending Blogs'"></app-no-data-found>
             </ng-container>
         </div>
 
-        <h1 class="section-title">Sports Blogs</h1>
-        <div class="flex gap-8 mb-32 flex-wrap">
-            <ng-container *ngFor="let blog of sportsBlogs">
-                <app-blog-card-sm [post]="blog"></app-blog-card-sm>
-            </ng-container>
-            <ng-container *ngIf="!sportsBlogs.length">
-                <app-no-data-found [title]="'Sports Blogs'"></app-no-data-found>
-            </ng-container>
-        </div>
-
-        <h1 class="section-title">Entertainment Blogs</h1>
-        <div class="flex gap-8 flex-wrap">
-            <ng-container *ngFor="let blog of entertainmentBlogs">
-                <app-blog-card-sm [post]="blog"></app-blog-card-sm>
-            </ng-container>
-            <ng-container *ngIf="!entertainmentBlogs.length">
-                <app-no-data-found [title]="'Entertainment Blogs'"></app-no-data-found>
-            </ng-container>
-        </div>
+      
     </ng-container>
-    <br>
-    <br>
-    <br>
-    <app-news-letter></app-news-letter>
+
 </div>
-<br>
-<br>
-<br>
